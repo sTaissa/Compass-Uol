@@ -15,7 +15,7 @@
 <a id="sobre"></a>
 ## 📝 Sobre o programa
 
->É uma iniciativa da Compass Uol, que visa a formação de pessoas dentro da cultura da empresa e descoberta de novos talentos. Com duração de 5 meses, remotamente e seguindo a metodologia Scrum, os participantes dispõem de 4h semanais para realizar cursos e projetos práticos com o auxílio da plataforma Udemy
+É uma iniciativa da Compass Uol, que visa a formação de pessoas dentro da cultura da empresa e descoberta de novos talentos. Com duração de 5 meses, remotamente e seguindo a metodologia Scrum, os participantes dispõem de 4h semanais para realizar cursos e projetos práticos com o auxílio da plataforma Udemy
 
 <br>
 
