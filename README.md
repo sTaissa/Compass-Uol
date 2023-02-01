@@ -87,3 +87,4 @@
 
 [![Linkedin Badge](https://img.shields.io/badge/-Taissa-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/taissa-silva-39a4171b5/)](https://www.linkedin.com/in/taissa-silva-39a4171b5/) 
 [![Gmail Badge](https://img.shields.io/badge/-staissa002@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:staissa002@gmail.com)](mailto:staissa002@gmail.com)
+[![Outlook Badge](https://img.shields.io/badge/-taissa.silva.pb@compasso.com.br-blue?style=flat-square&logo=microsoft-outlook&logoColor=white&link=mailto:taissa.silva.pb@compasso.com.br)](mailto:taissa.silva.pb@compasso.com.br)
