@@ -18,87 +18,61 @@
 <a id="conteudos"></a>
 ## 📚 Conteúdos do programa
 
-### Introdução ![0%](https://progress-bar.dev/0)
+### Introdução ![a](https://img.shields.io/badge/in_progress-yellow)
 - [ ] Segurança em Aplicações WEB
-- [ ] Gestão Ágil
+- [ ] Metodologia Ágil
 
-### Sprint 1 ![33,3%](https://progress-bar.dev/33)
+### Sprint 1 ![a](https://img.shields.io/badge/done-green)
 - [x] Git e GitHub
-   * [Anotações](https://lowly-pear-52e.notion.site/Git-e-GitHub-cb08b6ba3f324d019292b6a825b32c7c)
-- [ ] Sistemas GNU/Linux 
-   * [Anotações](https://lowly-pear-52e.notion.site/Administra-o-de-Sistemas-GNU-Linux-ba33126a4f3548e780065f63c57fa8db)
-- [ ] Exercício 1.0
+- [x] Sistemas GNU/Linux 
+- [x] Exercício 1.0
 
-### Sprint 2 ![0%](https://progress-bar.dev/0)
-- [ ] Conceitos
+### Sprint 2 ![a](https://img.shields.io/badge/in_progress-yellow)
+- [ ] Conceitos da área de dados
 - [ ] SQL
-- [ ] Banco de dados relacional
-- [ ] Exercício 2.0
 - [ ] Big Data
+- [ ] Exercício 2.0
 - [ ] Exercício 2.1
 
-### Sprint 3 ![0%](https://progress-bar.dev/0)
-- [ ] Conceitos
+### Sprint 3 ![a](https://img.shields.io/badge/to_do-red)
 - [ ] Python
 - [ ] Exercício 3.0
 
-### Sprint 4 ![0%](https://progress-bar.dev/0)
+### Sprint 4 ![a](https://img.shields.io/badge/to_do-red)
 - [ ] Programação funcional
 - [ ] Python
 - [ ] Docker
 - [ ] Estatística descritiva
 - [ ] Exercício 4.0
 
-### Sprint 5 ![0%](https://progress-bar.dev/0)
-- [ ] Conceitos
-- [ ] AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner
-- [ ] AWS Skill Builder - AWS Partner: Accreditation (Technical)
-- [ ] AWS Skill Builder - AWS Partner: Sales Accreditation (Business)
-- [ ] AWS Skill Builder - AWS Partner: Cloud Economics Accreditation
-- [ ] AWS Skill Builder - AWS Partner: Cloud Economics Accreditation
-- [ ] AWS Skill Builder - AWS Partner: Cloud Economics Accreditation
+### Sprint 5 ![a](https://img.shields.io/badge/to_do-red)
+- [ ] Computação em núvem (AWS)
 - [ ] Exercício 5.0
 
-### Sprint 6 ![0%](https://progress-bar.dev/0)
-- [ ] AWS Skill Builder - Data Analytics Fundamentals
-- [ ] AWS Partner: Data Analytics on AWS (Business)
-- [ ] AWS Skill Builder - AWS Partner: Data Analytics on AWS (Business)
-- [ ] AWS Skill Builder - Introduction to Amazon Kinesis Streams
-- [ ] AWS Skill Builder - Introduction to Amazon Kinesis Analytics
-- [ ] AWS Skill Builder - Introduction to Amazon Elastic MapReduce (EMR) 
-- [ ] AWS Skill Builder - Introduction to Amazon Athena
-- [ ] AWS Skill Builder - Introduction to Amazon Quicksight 
-- [ ] AWS Skill Builder - Introduction to AWS IoT Analytics
-- [ ] AWS Skill Builder - Getting Started with Amazon Redshift
-- [ ] AWS Skill Builder - Deep Dive into Concepts and Tools for Analyzing Streaming Data
-- [ ] AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift
-- [ ] AWS Skill Builder - Serverless Analytics
-- [ ] AWS Skill Builder - Serverless Analytics
+### Sprint 6 ![a](https://img.shields.io/badge/to_do-red)
+- [ ] Computação em núvem (AWS)
 - [ ] Exercício 6.0
 
-### Sprint 7 ![0%](https://progress-bar.dev/0)
-- [ ] Conceitos
-- [ ] Hadoop, MapReduce for Big Data problems
-- [ ] Formação Spark com Pyspark
-- [ ] AWS Skill Builder - AWS Hadoop Fundamentals
+### Sprint 7 ![a](https://img.shields.io/badge/to_do-red)
+- [ ] Arquitetura Lambda
+- [ ] Apache Hadoop
+- [ ] Apache Spark
 - [ ] Exercício 7.0
 
-### Sprint 8 ![0%](https://progress-bar.dev/0)
-- [ ] Conceitos
-- [ ] Formação Spark com Pyspark
+### Sprint 8 ![a](https://img.shields.io/badge/to_do-red)
+- [ ] Apache Spark Batch
 - [ ] Exercício 8.0
 
-### Sprint 9 ![0%](https://progress-bar.dev/0)
-- [ ] Conteúdo exclusivo
+### Sprint 9 ![a](https://img.shields.io/badge/to_do-red)
+- [ ] Apache Spark Streaming
 
-### Sprint 10 ![0%](https://progress-bar.dev/0)
+### Sprint 10 ![a](https://img.shields.io/badge/to_do-red)
 - [ ] Data Warehouse
-- [ ] AWS Skill Builder - Visualizing with QuickSight
-- [ ] Exercício 10.0 AWS
-- [ ] Amazon QuickSight Learning Series
+- [ ] Visualização de dados
+- [ ] Exercício 10.0
 - [ ] Exercício 10.1
 
-<a id="autor"</a>
+<a> id="autor"</a>
 ##  👩‍💻 Autor
 
 #### [Taissa Silva](https://github.com/sTaissa)
