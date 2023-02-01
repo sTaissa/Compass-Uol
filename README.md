@@ -10,10 +10,14 @@
  <a href="#autor">Autor</a>
 </p>
 
+<br>
+
 <a id="sobre"></a>
 ## 📝 Sobre o programa
 
 >É uma iniciativa da Compass Uol, que visa a formação de pessoas dentro da cultura da empresa e descoberta de novos talentos. Com duração de 5 meses, remotamente e seguindo a metodologia Scrum, os participantes dispõem de 4h semanais para realizar cursos e projetos práticos com o auxílio da plataforma Udemy
+
+<br>
 
 <a id="conteudos"></a>
 ## 📚 Conteúdos do programa
@@ -72,10 +76,12 @@
 - [ ] Exercício 10.0
 - [ ] Exercício 10.1
 
+<br> 
+
 <a id="autor"></a>
 ##  👩‍💻 Autor
 
-<img height="90px" src=imagens/IMG_20220815_161439.JPG>
+<img height="90px" src=imagens/autor.jpg>
 
 #### [Taissa Silva](https://github.com/sTaissa)
 
