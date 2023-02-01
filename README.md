@@ -72,8 +72,10 @@
 - [ ] Exercício 10.0
 - [ ] Exercício 10.1
 
-<a> id="autor"</a>
+<a id="autor"></a>
 ##  👩‍💻 Autor
+
+<img height="90px" src=imagens/IMG_20220815_161439.JPG>
 
 #### [Taissa Silva](https://github.com/sTaissa)
 
