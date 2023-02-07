@@ -12,6 +12,13 @@
 
 <br>
 
+### Complementos
+- [Banco de dados para execução das querys](/sprint2/biblioteca.sqlite)
+- Diagrama entidade relacionamento representando o banco de dados "Bibliioteca":
+![biblioteca.sqlite](/sprint2/imagens-sprint2/DER%20-%20Biblioteca.png)
+
+---
+
 ### Exercício 1
 Apresente a query para listar todos os livros publicados após 2014. Ordenar pela coluna cod, em ordem crescente, as linhas.  Atenção às colunas esperadas no resultado final: cod, titulo, autor, editora, valor, publicacao, edicao, idioma
 ``` SQL
