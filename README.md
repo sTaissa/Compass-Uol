@@ -1,4 +1,4 @@
-<a href="https://compass.uol/pt/home/?utm_source=google-ads&utm_medium=ppc&utm_campaign=compasso-uol-institucional&utm_term=compass%20uol&gclid=Cj0KCQiA8t2eBhDeARIsAAVEga0psEnDoNWT4VpWMzuImp4AOtzXNza6-2BjcW4NhikaYVwWlSz8DcIaAqvXEALw_wcB"><img src="imagens/capa-compass.png"></a>
+<a href="https://compass.uol/pt/home/?utm_source=google-ads&utm_medium=ppc&utm_campaign=compasso-uol-institucional&utm_term=compass%20uol&gclid=Cj0KCQiA8t2eBhDeARIsAAVEga0psEnDoNWT4VpWMzuImp4AOtzXNza6-2BjcW4NhikaYVwWlSz8DcIaAqvXEALw_wcB"><img src="imagens-readme/capa-compass.png"></a>
 
 <h1 align="center">Programa de Bolsas Compass Uol - Data & Analytics</h1>
 
@@ -7,6 +7,7 @@
 <p align="center">
  <a href="#sobre">Sobre o programa</a> •
  <a href="#conteudos">Conteúdos estudados</a> •
+ <a href="#certificados">Certificados</a> •
  <a href="#autor">Autor</a>
 </p>
 
@@ -78,10 +79,17 @@
 
 <br> 
 
+<a id="certificados"></a>
+## 🗂️ Certificados
+
+<a href="/certificados">Acesse os certificados obtidos durante o programa</a>
+
+<br>
+
 <a id="autor"></a>
 ##  👩‍💻 Autor
 
-<img height="90px" src=imagens/autor.jpg>
+<img height="90px" src=imagens-readme/autor.jpg>
 
 #### [Taissa Silva](https://github.com/sTaissa)
 
