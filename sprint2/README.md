@@ -179,3 +179,33 @@ Saída da query:
 
 &nbsp;
 ![saída exercício 9](/sprint2/imagens-sprint2/e9.PNG)
+
+### Exercício 10
+A comissão de um vendedor é definida a partir de um percentual sobre o total de vendas (quantidade * valor unitário) por ele realizado. O percentual de comissão de cada vendedor está armazenado na coluna perccomissao, tabela tbvendedor. 
+
+Com base em tais informações, calcule a comissão de todos os vendedores, considerando todas as vendas armazenadas na base de dados com status concluído.
+
+As colunas presentes no resultado devem ser vendedor, valor_total_vendas e comissao. O valor de comissão deve ser apresentado em ordem decrescente arredondado na segunda casa decimal.
+``` SQL
+WITH valor_total_vendas AS ( --Calcula o toal de vendido por cada vendedor (valor unitário * quantidade)
+	SELECT cdvdd, SUM(qtd*vrunt) AS valor_total_vendas
+	FROM tbvendas 
+	WHERE status = 'Concluído' --Somente vendas concluídas
+	GROUP BY cdvdd --Agrupa por vendedor
+	ORDER BY valor_total_vendas DESC
+)
+
+SELECT 
+	vdd.nmvdd AS vendedor, 
+	vtv.valor_total_vendas, 
+	ROUND(vtv.valor_total_vendas*(vdd.perccomissao/100), 2) AS comissao --Calcula a comissão (valor de vendas * percentual) e arredonda pra 2 casas decimais
+FROM tbvendedor AS vdd
+LEFT JOIN valor_total_vendas AS vtv
+	ON vdd.cdvdd = vtv.cdvdd
+GROUP BY vdd.nmvdd --Agrupa por vendedor
+ORDER BY comissao DESC
+``` 
+Saída da query: 
+
+&nbsp;
+![saída exercício 9](/sprint2/imagens-sprint2/e10.PNG)
