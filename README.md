@@ -32,11 +32,11 @@
 - [x] Sistemas GNU/Linux 
 - [x] Exercício 1.0
 
-### Sprint 2 ![a](https://img.shields.io/badge/in_progress-yellow)
-- [ ] Conceitos da área de dados
-- [ ] SQL
+### [Sprint 2](/sprint2) ![a](https://img.shields.io/badge/in_progress-yellow)
+- [x] Conceitos da área de dados
+- [x] SQL
 - [ ] Big Data
-- [ ] Exercício 2.0
+- [x] Exercício 2.0
 - [ ] Exercício 2.1
 
 ### Sprint 3 ![a](https://img.shields.io/badge/to_do-red)
