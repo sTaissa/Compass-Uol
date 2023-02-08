@@ -132,3 +132,34 @@ Saída da query:
 
 &nbsp;
 ![saída exercício 7](https://github.com/sTaissa/Compass-Uol/blob/main/sprint2/imagens-sprint2/e7.PNG)
+
+<br>
+
+<a id="exercicio-b"></a>
+## 🏷️ Exercícios SQL Loja
+
+<br>
+
+### Complementos
+- [Banco de dados para execução das querys](/sprint2/loja.sqlite)
+- Diagrama entidade relacionamento representando o banco de dados "Loja":
+![loja.sqlite](/sprint2/imagens-sprint2/DER_Loja.png)
+
+---
+
+### Exercício 8
+Apresente a query para listar o código e o nome do vendedor com maior número de vendas (contagem), e que estas vendas estejam com o status concluída. As colunas presentes no resultado devem ser, portanto, cdvdd e nmvdd.
+``` SQL
+SELECT ven.cdvdd, vdd.nmvdd
+FROM tbvendas AS ven
+LEFT JOIN tbvendedor AS vdd
+	ON ven.cdvdd = vdd.cdvdd 
+WHERE status = 'Concluído' -- Seleciona apenas as vendas concluídas para a contagem
+GROUP BY ven.cdvdd, vdd.nmvdd -- Agrupa por vendedor
+ORDER BY count(ven.cdven) DESC -- Ordena pena contagem mais alta
+LIMIT 1 -- Limita ao primeiro vendedor com mais vendas
+``` 
+Saída da query: 
+
+&nbsp;
+![saída exercício 8](/sprint2/imagens-sprint2/e8.PNG)
