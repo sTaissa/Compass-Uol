@@ -209,3 +209,20 @@ Saída da query:
 
 &nbsp;
 ![saída exercício 9](/sprint2/imagens-sprint2/e10.PNG)
+
+### Exercício 11
+Apresente a query para listar o código e nome cliente com maior gasto na loja. As colunas presentes no resultado devem ser cdcli, nmcli e gasto, esta última representando o somatório das vendas (concluídas) atribuídas ao cliente.
+``` SQL
+SELECT 
+	cdcli, 
+	nmcli, 
+	SUM(qtd*vrunt) AS gasto --Soma o total vendido para cada cliente (cada venda é dada por quantidade * valor unitário)
+FROM tbvendas 
+GROUP BY cdcli, nmcli --Agrupa pelo cliente
+ORDER BY gasto DESC --Ordena pelo maior gasto
+LIMIT 1
+``` 
+Saída da query: 
+
+&nbsp;
+![saída exercício 9](/sprint2/imagens-sprint2/e11.PNG)
