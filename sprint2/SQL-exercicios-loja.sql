@@ -60,4 +60,24 @@ ORDER BY gasto DESC --Ordena pelo maior gasto
 LIMIT 1
 
 
+-- E12: Apresente a query para listar código, nome e data de nascimento dos dependentes do vendedor com menor valor total 
+--bruto em vendas (não sendo zero). As colunas presentes no resultado devem ser cddep, nmdep, dtnasc e valor_total_vendas.
+-- Observação: Apenas vendas com status concluído.
+WITH valor_total_vendas AS ( 
+	--Calcula o total de vendas por cada vendedor (valor unitário * quantidade)
+	SELECT cdvdd, SUM(qtd*vrunt) AS valor_total_vendas
+	FROM tbvendas 
+	WHERE status = 'Concluído' --Somente vendas concluídas
+	GROUP BY cdvdd --Agrupa por vendedor
+	ORDER BY valor_total_vendas ASC
+	LIMIT 1 --Limita ao vendedor com menos vendas
+)
+
+--Seleciona os dependentes do vendedor com menos vendas
+SELECT dep.cddep, dep.nmdep, dep.dtnasc, vtv.valor_total_vendas
+FROM tbdependente AS dep
+INNER JOIN valor_total_vendas AS vtv
+	ON dep.cdvdd  = vtv.cdvdd
+GROUP BY dep.cddep, dep.nmdep, dep.dtnasc  --Agrupa por dependente
+
 
