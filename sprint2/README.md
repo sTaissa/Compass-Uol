@@ -250,11 +250,29 @@ SELECT
     cdpro, 
     nmcanalvendas, 
     nmpro, SUM(qtd) AS quantidade_vendas --Soma todas as unidades vendidas de cada produto
-FROM tbvendas AS ven
+FROM tbvendas
 WHERE status = 'Concluído' --Apenas vendas concluídas
 GROUP BY cdpro, nmcanalvendas, nmpro
 ORDER BY quantidade_vendas ASC
 LIMIT 10 --Limita aos 10 produtos menos vendidos
 ``` 
 Saída da query: 
-![saída exercício 12](/sprint2/imagens-sprint2/e13.PNG)
+
+![saída exercício 13](/sprint2/imagens-sprint2/e13.PNG)
+
+### Exercício 14
+Apresente a query para listar o gasto médio por estado da federação. As colunas presentes no resultado devem ser estado e gastomedio. Considere apresentar a coluna gastomedio arredondada na segunda casa decimal e ordenado de forma decrescente.
+
+Observação: Apenas vendas com status concluído.
+``` SQL
+SELECT 
+	estado, 
+	ROUND(AVG(qtd*vrunt), 2) AS gastomedio --Faz a média do valor de cada venda e arredonda
+FROM tbvendas 
+WHERE status = 'Concluído' --Apenas vendas concluídas
+GROUP BY estado --Agrupa por estado
+ORDER BY gastomedio DESC --Ordena pelo maior gasto
+``` 
+Saída da query: 
+
+![saída exercício 14](/sprint2/imagens-sprint2/e14.PNG)
