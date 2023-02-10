@@ -89,9 +89,39 @@
 <a id="autor"></a>
 ##  👩‍💻 Autor
 
-<img height="90px" src=imagens-readme/autor.jpg>
+<img height="90px" src=imagens-readme/autor.jpg> 
 
-#### [Taissa Silva](https://github.com/sTaissa)
+```SQL
+SELECT * FROM tbtaissa
+```
+
+| Nome | Sobrenome | Idade | Cidade | Estado 
+|--- |--- |--- |--- |---
+| Taissa | Silva | 20 | União da Vitória | PR 
+
+```SQL
+SELECT * FROM tbeducacao
+```
+
+| Instituicao de ensino | Curso | Status | Semestre  
+|--- |--- |--- |---
+| Unicesumar | Análise e desenvolvimento de sistemas | Cursando | 4 
+| Instituto Federal do Paraná | Técnico em informática | Concluído | 0
+
+```SQL
+SELECT * FROM tbtecnologias
+```
+
+| Nome | Conhecimento 
+|--- |--- 
+| C | Básico
+| Pyhton | Básico
+| Java | Básico
+| SQL | Intermediário
+| HTML | Básico
+| CSS | Básico
+| Javascript | Básico
+| Git | Intermediário
 
 [![Linkedin Badge](https://img.shields.io/badge/-Taissa-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/taissa-silva-39a4171b5/)](https://www.linkedin.com/in/taissa-silva-39a4171b5/) 
 [![Gmail Badge](https://img.shields.io/badge/-staissa002@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:staissa002@gmail.com)](mailto:staissa002@gmail.com)
