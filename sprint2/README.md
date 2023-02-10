@@ -41,7 +41,6 @@ LIMIT 10 --- Limita aos 10 mais caros
 ```
 Saída da query: 
 
-&nbsp;
 ![saída exercício 2](https://github.com/sTaissa/Compass-Uol/blob/main/sprint2/imagens-sprint2/e2.PNG)
 
 ### Exercício 3
@@ -60,7 +59,6 @@ LIMIT 5
 ```
 Saída da query: 
 
-&nbsp;
 ![saída exercício 3](https://github.com/sTaissa/Compass-Uol/blob/main/sprint2/imagens-sprint2/e3.PNG)
 
 ### Exercício 4
@@ -75,7 +73,6 @@ ORDER BY au.nome ASC
 ```
 Saída da query: 
 
-&nbsp;
 ![saída exercício 4](https://github.com/sTaissa/Compass-Uol/blob/main/sprint2/imagens-sprint2/e4.PNG)
 ![saída exercício 4](https://github.com/sTaissa/Compass-Uol/blob/main/sprint2/imagens-sprint2/e4.1.PNG)
 ![saída exercício 4](https://github.com/sTaissa/Compass-Uol/blob/main/sprint2/imagens-sprint2/e4.2.PNG)
@@ -98,7 +95,6 @@ ORDER BY au.nome ASC
 ```
 Saída da query: 
 
-&nbsp;
 ![saída exercício 5](https://github.com/sTaissa/Compass-Uol/blob/main/sprint2/imagens-sprint2/e5.PNG)
 ![saída exercício 5](https://github.com/sTaissa/Compass-Uol/blob/main/sprint2/imagens-sprint2/e5.1.PNG)
 
@@ -115,7 +111,6 @@ LIMIT 1 --- Limita ao primeiro mais caro
 ```
 Saída da query: 
 
-&nbsp;
 ![saída exercício 6](https://github.com/sTaissa/Compass-Uol/blob/main/sprint2/imagens-sprint2/e6.PNG)
 
 ### Exercício 7
@@ -130,7 +125,6 @@ ORDER BY autor ASC
 ```
 Saída da query: 
 
-&nbsp;
 ![saída exercício 7](https://github.com/sTaissa/Compass-Uol/blob/main/sprint2/imagens-sprint2/e7.PNG)
 
 <br>
@@ -161,7 +155,6 @@ LIMIT 1 -- Limita ao primeiro vendedor com mais vendas
 ``` 
 Saída da query: 
 
-&nbsp;
 ![saída exercício 8](/sprint2/imagens-sprint2/e8.PNG)
 
 ### Exercício 9
@@ -177,7 +170,6 @@ LIMIT 1 --Limita a contagem 1 contagem mais alta
 ``` 
 Saída da query: 
 
-&nbsp;
 ![saída exercício 9](/sprint2/imagens-sprint2/e9.PNG)
 
 ### Exercício 10
@@ -207,7 +199,6 @@ ORDER BY comissao DESC
 ``` 
 Saída da query: 
 
-&nbsp;
 ![saída exercício 10](/sprint2/imagens-sprint2/e10.PNG)
 
 ### Exercício 11
@@ -224,7 +215,6 @@ LIMIT 1
 ``` 
 Saída da query: 
 
-&nbsp;
 ![saída exercício 11](/sprint2/imagens-sprint2/e11.PNG)
 
 ### Exercício 12
@@ -251,5 +241,20 @@ GROUP BY dep.cddep, dep.nmdep, dep.dtnasc  --Agrupa por dependente
 ``` 
 Saída da query: 
 
-&nbsp;
 ![saída exercício 12](/sprint2/imagens-sprint2/e12.PNG)
+
+### Exercício 13
+ Apresente a query para listar os 10 produtos menos vendidos pelos canais de E-Commerce ou Matriz (Considerar apenas vendas concluídas). As colunas presentes no resultado devem ser cdpro, nmcanalvendas, nmpro e quantidade_vendas.
+``` SQL
+SELECT 
+    cdpro, 
+    nmcanalvendas, 
+    nmpro, SUM(qtd) AS quantidade_vendas --Soma todas as unidades vendidas de cada produto
+FROM tbvendas AS ven
+WHERE status = 'Concluído' --Apenas vendas concluídas
+GROUP BY cdpro, nmcanalvendas, nmpro
+ORDER BY quantidade_vendas ASC
+LIMIT 10 --Limita aos 10 produtos menos vendidos
+``` 
+Saída da query: 
+![saída exercício 12](/sprint2/imagens-sprint2/e13.PNG)

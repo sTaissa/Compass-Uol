@@ -81,3 +81,15 @@ INNER JOIN valor_total_vendas AS vtv
 GROUP BY dep.cddep, dep.nmdep, dep.dtnasc  --Agrupa por dependente
 
 
+-- E13: Apresente a query para listar os 10 produtos menos vendidos pelos canais de E-Commerce ou Matriz (Considerar apenas vendas 
+--concluídas). As colunas presentes no resultado devem ser cdpro, nmcanalvendas, nmpro e quantidade_vendas.
+SELECT 
+    cdpro, 
+    nmcanalvendas, 
+    nmpro, SUM(qtd) AS quantidade_vendas --Soma todas as unidades vendidas de cada produto
+FROM tbvendas AS ven
+WHERE status = 'Concluído' --Apenas vendas concluídas
+GROUP BY cdpro, nmcanalvendas, nmpro
+ORDER BY quantidade_vendas ASC
+LIMIT 10 --Limita aos 10 produtos menos vendidos
+
