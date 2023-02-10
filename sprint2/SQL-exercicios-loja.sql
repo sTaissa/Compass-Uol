@@ -104,3 +104,10 @@ FROM tbvendas
 WHERE status = 'Concluído' --Apenas vendas concluídas
 GROUP BY estado --Agrupa por estado
 ORDER BY gastomedio DESC --Ordena pelo maior gasto
+
+
+-- E15: Apresente a query para listar os códigos das vendas identificadas como deletadas. Apresente o resultado em ordem crescente.
+SELECT cdven 
+FROM tbvendas
+WHERE deletado <> 0 --Seleciona as vendas onde o campo "deletado" é true (1)
+ORDER BY cdven ASC

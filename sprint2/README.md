@@ -129,7 +129,7 @@ Saída da query:
 
 <br>
 
-<a id="exercicio-b"></a>
+<a id="exercicio-l"></a>
 ## 🏷️ Exercícios SQL Loja
 
 <br>
@@ -276,3 +276,15 @@ ORDER BY gastomedio DESC --Ordena pelo maior gasto
 Saída da query: 
 
 ![saída exercício 14](/sprint2/imagens-sprint2/e14.PNG)
+
+### Exercício 15
+Apresente a query para listar os códigos das vendas identificadas como deletadas. Apresente o resultado em ordem crescente.
+``` SQL
+SELECT cdven 
+FROM tbvendas
+WHERE deletado <> 0 --Seleciona as vendas onde o campo "deletado" é true (1)
+ORDER BY cdven ASC
+``` 
+Saída da query: 
+
+![saída exercício 15](/sprint2/imagens-sprint2/e15.PNG)
