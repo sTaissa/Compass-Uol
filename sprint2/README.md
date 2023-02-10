@@ -288,3 +288,20 @@ ORDER BY cdven ASC
 Saída da query: 
 
 ![saída exercício 15](/sprint2/imagens-sprint2/e15.PNG)
+
+### Exercício 15
+Apresente a query para listar a quantidade média vendida de cada produto agrupado por estado da federação. As colunas presentes no resultado devem ser estado e nmprod e quantidade_media. Considere arredondar o valor da coluna quantidade_media na quarta casa decimal. Ordene os resultados pelo estado (1º) e nome do produto (2º).
+Obs: Somente vendas concluídas.
+``` SQL
+SELECT 
+	estado,
+	nmpro,
+	ROUND(AVG(qtd), 4) AS quantidade_media --Calcula a quantidade média vendida de cada produto e arredonda para até 4 casas decimais
+FROM tbvendas
+WHERE status = 'Concluído' --Seleciona só vendas concluídas 
+GROUP BY estado, nmpro --Agrupa por estado e produto
+ORDER BY estado, nmpro --Ordena pelo estado e depois pelo produto
+``` 
+Saída da query: 
+
+![saída exercício 16](/sprint2/imagens-sprint2/e16.PNG)
