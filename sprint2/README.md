@@ -1,10 +1,28 @@
 <h1 align="center"> Sprint 2</h1>
 
 <p align="center">
+ <a href="#sobre">Sobre</a> •
  <a href="#exercicio-b">Exercícios SQL Biblioteca</a> •
  <a href="#exercicio-l">Exercícios SQL Loja</a> •
  <a href="#exercicio-ex">Exercícios SQL Exportação</a>
 </p>
+
+<br> 
+
+<a id="sobre"></a>
+## 📚 Sobre
+
+### Conteúdos
+
+- SQL
+- Big Data
+
+
+
+### Mentor
+
+[Antonio Alex de Souza](https://github.com/alexsouza-compass)
+
 
 <br>
 
@@ -310,7 +328,7 @@ Saída da query:
 <br>
 
 <a id="exercicio-ex"></a>
-## 📚 Exercícios SQL Exportação
+## 📤 Exercícios SQL Exportação
 
 <br>
 
