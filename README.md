@@ -103,25 +103,42 @@ SELECT * FROM tbtaissa
 SELECT * FROM tbeducacao
 ```
 
-| Instituicao de ensino | Curso | Status | Semestre  
-|--- |--- |--- |---
-| Unicesumar | Análise e desenvolvimento de sistemas | Cursando | 4 
-| Instituto Federal do Paraná | Técnico em informática | Concluído | 0
+| Código | Instituicao de ensino | Curso | Status | Semestre | Ano de conclusão 
+|--- |--- |--- |--- |--- |---
+| 1 | Instituto Federal do Paraná | Técnico em informática | Concluído | 0 | 2021
+| 2 | Unicesumar | Análise e desenvolvimento de sistemas | Cursando | 4 | 2023
 
 ```SQL
 SELECT * FROM tbtecnologias
 ```
 
-| Nome | Conhecimento 
-|--- |--- 
-| C | Básico
-| Pyhton | Básico
-| Java | Básico
-| SQL | Intermediário
-| HTML | Básico
-| CSS | Básico
-| Javascript | Básico
-| Git | Intermediário
+| Código | Nome | Conhecimento 
+|--- |--- |---
+| 1 | C | Básico
+| 2 | Pyhton | Básico
+| 3 | Java | Básico
+| 4 | SQL | Intermediário
+| 5 | HTML | Básico
+| 6 | CSS | Básico
+| 7 | Javascript | Básico
+| 8 | Git | Intermediário
+
+```SQL
+SELECT * FROM tbhobbies
+```
+
+| Código | Hobbie
+|--- |---
+| 1 | Ouvir música 
+| 2 | Ler
+| 3 | Assistir
+| 4 | Ficar com animais de estimação
+
+```SQL
+SELECT * FROM tbcontato
+```
+| Código | Nome | Link
+
 
 [![Linkedin Badge](https://img.shields.io/badge/-Taissa-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/taissa-silva-39a4171b5/)](https://www.linkedin.com/in/taissa-silva-39a4171b5/) 
 [![Gmail Badge](https://img.shields.io/badge/-staissa002@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:staissa002@gmail.com)](mailto:staissa002@gmail.com)

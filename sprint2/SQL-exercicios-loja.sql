@@ -40,7 +40,7 @@ WITH valor_total_vendas AS ( --Calcula o toal de vendido por cada vendedor (valo
 SELECT 
 	vdd.nmvdd AS vendedor, 
 	vtv.valor_total_vendas, 
-	ROUND(vtv.valor_total_vendas*(vdd.perccomissao/100), 2) AS comissao --Calcula a comissão (valor de vendas * percentual) e arredonda pra 2 casas decimais
+	ROUND(vtv.valor_total_vendas*vdd.perccomissao/100, 2) AS comissao --Calcula a comissão (valor de vendas * percentual) e arredonda pra 2 casas decimais
 FROM tbvendedor AS vdd
 LEFT JOIN valor_total_vendas AS vtv
 	ON vdd.cdvdd = vtv.cdvdd
