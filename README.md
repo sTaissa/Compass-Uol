@@ -138,8 +138,8 @@ SELECT * FROM tbhobbies
 SELECT * FROM tbcontato
 ```
 | Código | Nome | Link
-
-
-[![Linkedin Badge](https://img.shields.io/badge/-Taissa-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/taissa-silva-39a4171b5/)](https://www.linkedin.com/in/taissa-silva-39a4171b5/) 
-[![Gmail Badge](https://img.shields.io/badge/-staissa002@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:staissa002@gmail.com)](mailto:staissa002@gmail.com)
-[![Outlook Badge](https://img.shields.io/badge/-taissa.silva.pb@compasso.com.br-blue?style=flat-square&logo=microsoft-outlook&logoColor=white&link=mailto:taissa.silva.pb@compasso.com.br)](mailto:taissa.silva.pb@compasso.com.br)
+|--- |--- |---
+| 1 | Linkedin | [![Linkedin Badge](https://img.shields.io/badge/-Taissa-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/taissa-silva-39a4171b5/)](https://www.linkedin.com/in/taissa-silva-39a4171b5/) 
+| 2 | Gmail | [![Gmail Badge](https://img.shields.io/badge/-staissa002@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:staissa002@gmail.com)](mailto:staissa002@gmail.com)
+| 3 | Outlook Corporativo | [![Outlook Badge](https://img.shields.io/badge/-taissa.silva.pb@compasso.com.br-blue?style=flat-square&logo=microsoft-outlook&logoColor=white&link=mailto:taissa.silva.pb@compasso.com.br)](mailto:taissa.silva.pb@compasso.com.br)
+| 4 | Whatsapp | [![Whatsapp Badge](https://img.shields.io/badge/(42)_98801--0516-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/42988010516)
