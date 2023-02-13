@@ -10,7 +10,7 @@
 <br> 
 
 <a id="sobre"></a>
-## 📚 Sobre
+## 📎 Sobre
 
 ### Conteúdos
 
@@ -330,8 +330,8 @@ Saída da query:
 <a id="exercicio-ex"></a>
 ## 📤 Exercícios SQL Exportação
 
-<br>
-
 ### Exercício 1
 
 [Link](/sprint2/exercicios/10_livros_mais_caros.csv) para o arquivo CSV exportado da query para obter os 10 livros mais caros
+
+[Link](/sprint2/exercicios/5_editoras_com_mais_livros.csv) para o arquivo CSV exportado da query para obter as 5 editoras com mais livros na biblioteca
