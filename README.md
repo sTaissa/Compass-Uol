@@ -99,6 +99,8 @@ SELECT * FROM tbtaissa
 |--- |--- |--- |--- |---
 | Taissa | Silva | 20 | União da Vitória | PR 
 
+<br>
+
 ```SQL
 SELECT * FROM tbeducacao
 ```
@@ -107,6 +109,8 @@ SELECT * FROM tbeducacao
 |--- |--- |--- |--- |--- |---
 | 1 | Instituto Federal do Paraná | Técnico em informática | Concluído | 0 | 2021
 | 2 | Unicesumar | Análise e desenvolvimento de sistemas | Cursando | 4 | 2023
+
+<br>
 
 ```SQL
 SELECT * FROM tbtecnologias
@@ -123,6 +127,8 @@ SELECT * FROM tbtecnologias
 | 7 | Javascript | Básico
 | 8 | Git | Intermediário
 
+<br>
+
 ```SQL
 SELECT * FROM tbhobbies
 ```
@@ -133,6 +139,8 @@ SELECT * FROM tbhobbies
 | 2 | Ler
 | 3 | Assistir
 | 4 | Ficar com animais de estimação
+
+<br>
 
 ```SQL
 SELECT * FROM tbcontato
