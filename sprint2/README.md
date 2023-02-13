@@ -2,7 +2,8 @@
 
 <p align="center">
  <a href="#exercicio-b">Exercícios SQL Biblioteca</a> •
- <a href="#exercicio-l">Exercícios SQL Loja</a>
+ <a href="#exercicio-l">Exercícios SQL Loja</a> •
+ <a href="#exercicio-ex">Exercícios SQL Exportação</a>
 </p>
 
 <br>
@@ -305,3 +306,14 @@ ORDER BY estado, nmpro --Ordena pelo estado e depois pelo produto
 Saída da query: 
 
 ![saída exercício 16](/sprint2/imagens-sprint2/e16.PNG)
+
+<br>
+
+<a id="exercicio-ex"></a>
+## 📚 Exercícios SQL Exportação
+
+<br>
+
+### Exercício 1
+
+[Link](/sprint2/exercicios/10_livros_mais_caros.csv) para o arquivo CSV exportado da query para obter os 10 livros mais caros
