@@ -10,11 +10,12 @@ Par: 2
 # retorna o número e se este é par ou ímpar
 def impar_par(num):
     if num % 2 == 0:
-        print("Par: " + str(num))
+        return "Par"
     else:
-        print("Ímpar: " + str(num))
+        return "Ímpar"
 
 # solicita 3 números e chama a função que informa se é par ou impar
 for i in range(3):
     num = input(f"Informe o numero {i+1}: ")
-    impar_par(int(num))
+    print(impar_par(int(num)) + ": " + str(num))
+    
