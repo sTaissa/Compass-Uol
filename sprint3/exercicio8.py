@@ -11,23 +11,13 @@ A palavra: radar é um palíndromo
 A palavra: moto não é um palíndromo
 
 """
-# recebe uma lista e retorna-a invertida
-def inverte(lista):
-    j = -1
-    for i in range(0, len(lista)//2):
-        temp = lista[i]
-        lista[i] = lista[j]
-        lista[j] = temp
-        j += j
-    return lista
-
 lista = ['maça', 'arara', 'audio', 'radio', 'radar', 'moto']
 
+# transforma cada string em lista e verifica se esta fica igual de trás pra frente
 for i in lista:
     item_lista = list(i)
-    item_reverse = inverte(item_lista)
 
-    if item_lista == item_reverse:
+    if item_lista == item_lista[::-1]:
         print("A palavra: " + i + " é um palíndromo")
     else:
         print("A palavra: " + i + " não é um palíndromo")
