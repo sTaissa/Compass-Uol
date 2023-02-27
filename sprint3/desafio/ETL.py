@@ -50,6 +50,18 @@ def mais_filmes(dados):
         if item['filmes'] > maior:
             maior = item['filmes']
             ator = item['nome']
-    return {'ator':ator, 'filmes':maior}
+    return ator, maior
 
-print(mais_filmes(extrai()))
+# retorna a média do número de filmes por autor
+def media_filmes(dados):
+    soma = 0
+    for ator in dados:
+        soma += ator['filmes']
+    return soma/len(dados)
+
+# exetuta funções
+ator, filmes = mais_filmes(extrai())
+#print(f"Ator/atriz com maior número de filmes: {ator}. Quantidade de filmes: {filmes}")
+
+print(f"A média do número de filmes por autor é: {media_filmes(extrai())}")
+
