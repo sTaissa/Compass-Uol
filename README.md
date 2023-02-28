@@ -39,11 +39,11 @@
 - [x] Exercício 2.0
 - [x] Exercício 2.1
 
-### Sprint 3 ![a](https://img.shields.io/badge/in_progress-yellow)
-- [ ] Python
-- [ ] Exercício 3.0
+### [Sprint 3](/sprint3) ![a](https://img.shields.io/badge/done-green)
+- [x] Python
+- [x] Exercício 3.0
 
-### Sprint 4 ![a](https://img.shields.io/badge/to_do-red)
+### Sprint 4 ![a](https://img.shields.io/badge/in_progress-yellow)
 - [ ] Programação funcional
 - [ ] Python
 - [ ] Docker
