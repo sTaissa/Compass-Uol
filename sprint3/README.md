@@ -1,11 +1,61 @@
-"""
-Cada função cria um novo arquivo com os dados obtidos e retorna os mesmos dados para eventual utilização no programa
+<h1 align="center"> Sprint 3</h1>
 
-"""
+<p align="center">
+ <a href="#sobre">Sobre</a> •
+ <a href="#exercicios">Exercícios Python</a> •
+ <a href="#desafio">Desafio de ETL Python</a>
+</p>
 
-# extrai os dados do arquivo csv, tranforma em uma lista de dicionários python e limpa/padroniza os dados
-def extrai():
-    # abre o arquivo em forma de string
+<br> 
+
+<a id="sobre"></a>
+## 📎 Sobre
+
+### Conteúdos
+
+- Python
+
+
+
+### Mentor
+
+[Mathues Toledo](https://github.com/toledkrw)
+
+
+<br>
+
+<a id="exercicios"></a>
+## 🐍 Exercícios Python
+
+<br>
+
+[Link](sprint3/exercicios/) para os 25 exercícios
+
+<br>
+
+<a id="desafio"></a>
+##  📥  Desafio ETL Python
+
+<br>
+
+>Armazene o arquivo [actors.csv](sprint3/desafio/actors.csv) dentro de uma nova pasta, após isso crie 5 arquivos do tipo “txt” vazios (1 para cada exercício do desafio).
+
+>Em seguida para cada uma das tarefas da sequencia, leia o arquivo actors.csv utilizando Python como linguagem de programação e depois de obter as repostas necessárias armazene cada um dos resultados em um dos arquivos “txt” criados.
+
+>Pontos de Atenção:
+>- Para desenvolvimento deste exercício, **não deve ser** utilizado as bibliotecas Pandas e NumPy e/ou outras bibliotecas e engines que utilizam de dataframes.
+>- Todas as transformações que julgarem necessárias, devem ser feitas utilizando os scripts Python e **nenhuma modificação deve ser feita no arquivo actors.csv**
+>- Para leitura do arquivo actors.csv, **não deve** ser utilizado o módulo csv nativo do Python.
+
+---
+
+[Código completo do desafio](sprint3/desafio/ETL.py)
+
+### Extração e Transformação
+Como não podemos usar o módulo csv do Python, transformei cada linha do arquivo csv em um dicionário e coloquei todos em uma lista
+
+``` Python
+# abre o arquivo em forma de string
     with open("sprint3/desafio/actors.csv", "r", encoding="utf8") as file:
         lista = []
         contador = 0
@@ -46,11 +96,12 @@ def extrai():
             # adiciona cada dicionário com os dados do ator em uma lista para ter todos os dados
             lista.append(ator)
         file.close()
-    return lista
+```
 
-
-# desafio 1
-# retorna o ator com maior número de filmes e o respectivo número
+### Exercício 1
+O ator/atriz com maior número de filmes e o respectivo número de filmes
+``` Python
+# recebe os dados extraídos e transformados
 def mais_filmes(dados):
     ator, numero = maior(dados, 'filmes')
     
@@ -61,10 +112,25 @@ def mais_filmes(dados):
         file.close()
 
     return ator, maior
+```
 
+Função usada para achar o maior valor na questão 1 e 3:
+``` Python
+def maior(lista, dado):
+    maior = 0
+    for item in lista:
+        if item[dado] > maior:
+            maior = item[dado]
+            ator = item['nome']
+    return ator, maior
+```
+[Arquivo](sprint3/desafio/desafio1.txt) gerado:
+![desafio1](sprint3/imagens-sprint3/desafio1.png)
 
-# desafio 2
-# retorna a média do número de filmes por autor
+### Exercício 2
+A média do número de filmes por autor
+``` Python
+# recebe os dados extraídos e transformados
 def media_filmes(dados):
     soma = 0
     for ator in dados:
@@ -78,10 +144,14 @@ def media_filmes(dados):
         file.close()
 
     return media
+```
+[Arquivo](sprint3/desafio/desafio2.txt) gerado:
+![desafio2](sprint3/imagens-sprint3/desafio2.png)
 
-
-# desafio 3
-# retorna o ator com a maior média por filme
+### Exercício 3
+O ator/atriz com a maior média por filme
+``` Python
+# recebe os dados extraídos e transformados
 def maior_media(dados):
     ator, maior_media = maior(dados, 'media')
 
@@ -92,10 +162,14 @@ def maior_media(dados):
         file.close()
 
     return ator
+```
+[Arquivo](sprint3/desafio/desafio3.txt) gerado:
+![desafio3](sprint3/imagens-sprint3/desafio3.png)
 
-
-# desafio 4
-# retorna uma lista com o(s) filme(s) que mais aparece(m) e sua frequência
+### Exercício 4
+O nome do(s) filme(s) mais frequente(s) e sua respectiva frequência
+``` Python
+# recebe os dados extraídos e transformados
 def filme_frequente(dados):
     # cria um dicionário com cada filme individual e a sua frequência
     filmes = {}
@@ -128,22 +202,14 @@ def filme_frequente(dados):
         file.close()
 
     return frequente, maior_frequencia
+```
+[Arquivo](sprint3/desafio/desafio4.txt) gerado:
+![desafio4](sprint3/imagens-sprint3/desafio4.png)
 
-
-    resposta = ""
-    c = 0
-    for i in lista:
-        # se for o último item da lista não coloca vírgula ao fim
-        if c != len(lista) - 1:
-            resposta += i + ", "
-        else:
-            resposta += i
-        c += 1
-    return resposta
-
-
-# desafio 5
-# retorna uma lista dos autores, do mais bem pago para o menos bem pago
+### Exercício 5
+A lista dos Autores ordenada por pagamento. Do mais bem pago para o menos bem pago
+``` Python
+# recebe os dados extraídos e transformados
 def autores_salario(dados):
     # cria um dicionário com cada autor e seu pagamento
     pagamento = {}
@@ -163,21 +229,7 @@ def autores_salario(dados):
         file.close()
 
     return autores
-
-# retorna o maior valor de acordo com o dado passado e a qual ator pertence esse valor
-# evita repetição de código em outras funções
-def maior(lista, dado):
-    maior = 0
-    for item in lista:
-        if item[dado] > maior:
-            maior = item[dado]
-            ator = item['nome']
-    return ator, maior
-
-# executa funções
-dados = extrai()
-mais_filmes(dados)
-media_filmes(dados)
-maior_media(dados)
-filme_frequente(dados)
-autores_salario(dados)
+```
+[Arquivo](sprint3/desafio/desafio5.txt) gerado:
+![desafio5.1](sprint3/imagens-sprint3/desafio5.1.png)
+![desafio5.2](sprint3/imagens-sprint3/desafio5.2.png)
