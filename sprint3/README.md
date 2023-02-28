@@ -15,8 +15,6 @@
 
 - Python
 
-
-
 ### Mentor
 
 [Mathues Toledo](https://github.com/toledkrw)
@@ -29,7 +27,7 @@
 
 <br>
 
-[Link](sprint3/exercicios/) para os 25 exercícios
+[Link](/sprint3/exercicios/) para os 25 exercícios
 
 <br>
 
@@ -38,7 +36,7 @@
 
 <br>
 
->Armazene o arquivo [actors.csv](sprint3/desafio/actors.csv) dentro de uma nova pasta, após isso crie 5 arquivos do tipo “txt” vazios (1 para cada exercício do desafio).
+>Armazene o arquivo [actors.csv](/sprint3/desafio/actors.csv) dentro de uma nova pasta, após isso crie 5 arquivos do tipo “txt” vazios (1 para cada exercício do desafio).
 
 >Em seguida para cada uma das tarefas da sequencia, leia o arquivo actors.csv utilizando Python como linguagem de programação e depois de obter as repostas necessárias armazene cada um dos resultados em um dos arquivos “txt” criados.
 
@@ -49,7 +47,7 @@
 
 ---
 
-[Código completo do desafio](sprint3/desafio/ETL.py)
+[Código completo do desafio](/sprint3/desafio/ETL.py)
 
 ### Extração e Transformação
 Como não podemos usar o módulo csv do Python, transformei cada linha do arquivo csv em um dicionário e coloquei todos em uma lista
@@ -124,8 +122,9 @@ def maior(lista, dado):
             ator = item['nome']
     return ator, maior
 ```
-[Arquivo](sprint3/desafio/desafio1.txt) gerado:
-![desafio1](sprint3/imagens-sprint3/desafio1.png)
+[Arquivo](/sprint3/desafio/desafio1.txt) gerado:
+
+![desafio1](/sprint3/imagens-sprint3/desafio1.PNG)
 
 ### Exercício 2
 A média do número de filmes por autor
@@ -145,8 +144,9 @@ def media_filmes(dados):
 
     return media
 ```
-[Arquivo](sprint3/desafio/desafio2.txt) gerado:
-![desafio2](sprint3/imagens-sprint3/desafio2.png)
+[Arquivo](/sprint3/desafio/desafio2.txt) gerado:
+
+![desafio2](/sprint3/imagens-sprint3/desafio2.PNG)
 
 ### Exercício 3
 O ator/atriz com a maior média por filme
@@ -163,8 +163,9 @@ def maior_media(dados):
 
     return ator
 ```
-[Arquivo](sprint3/desafio/desafio3.txt) gerado:
-![desafio3](sprint3/imagens-sprint3/desafio3.png)
+[Arquivo](/sprint3/desafio/desafio3.txt) gerado:
+
+![desafio3](/sprint3/imagens-sprint3/desafio3.PNG)
 
 ### Exercício 4
 O nome do(s) filme(s) mais frequente(s) e sua respectiva frequência
@@ -203,8 +204,9 @@ def filme_frequente(dados):
 
     return frequente, maior_frequencia
 ```
-[Arquivo](sprint3/desafio/desafio4.txt) gerado:
-![desafio4](sprint3/imagens-sprint3/desafio4.png)
+[Arquivo](/sprint3/desafio/desafio4.txt) gerado:
+
+![desafio4](/sprint3/imagens-sprint3/desafio4.PNG)
 
 ### Exercício 5
 A lista dos Autores ordenada por pagamento. Do mais bem pago para o menos bem pago
@@ -230,6 +232,7 @@ def autores_salario(dados):
 
     return autores
 ```
-[Arquivo](sprint3/desafio/desafio5.txt) gerado:
-![desafio5.1](sprint3/imagens-sprint3/desafio5.1.png)
-![desafio5.2](sprint3/imagens-sprint3/desafio5.2.png)
+[Arquivo](/sprint3/desafio/desafio5.txt) gerado:
+
+![desafio5.1](/sprint3/imagens-sprint3/desafio5.1.PNG)
+![desafio5.2](/sprint3/imagens-sprint3/desafio5.2.PNG)
