@@ -1,0 +1,52 @@
+A lista dos Autores ordenada por pagamento. Do mais bem pago para o menos bem pago:
+
+Harrison Ford
+Samuel L. Jackson
+Morgan Freeman
+Tom Hanks
+Robert Downey Jr.
+Eddie Murphy
+Tom Cruise
+Johnny Depp
+Michael Caine
+Scarlett Johansson
+Gary Oldman
+Robin Williams
+Bruce Willis
+Stellan Skarsgard
+Anthony Daniels
+Ian McKellen
+Will Smith
+Stanley Tucci
+Matt Damon
+Robert DeNiro
+Cameron Diaz
+Liam Neeson
+Andy Serkis
+Don Cheadle
+Ben Stiller
+Helena Bonham Carter
+Orlando Bloom
+Woody Harrelson
+Cate Blanchett
+Julia Roberts
+Elizabeth Banks
+Ralph Fiennes
+Emma Watson
+Tommy Lee Jones
+Brad Pitt
+Adam Sandler
+Daniel Radcliffe
+Jonah Hill
+Owen Wilson
+Idris Elba
+Bradley Cooper
+Mark Wahlberg
+Jim Carrey
+Dustin Hoffman
+Leonardo DiCaprio
+Jeremy Renner
+Philip Seymour Hoffman
+Sandra Bullock
+Chris Evans
+Anne Hathaway

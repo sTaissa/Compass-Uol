@@ -1,3 +1,8 @@
+"""
+Cada função cria um novo arquivo com os dados obtidos e retorna os mesmos dados para eventual utilização no programa
+
+"""
+
 # extrai os dados do arquivo csv, tranforma em uma lista de dicionários python e limpa/padroniza os dados
 def extrai():
     # abre o arquivo em forma de string
@@ -43,6 +48,8 @@ def extrai():
         file.close()
     return lista
 
+
+# desafio 1
 # retorna o ator com maior número de filmes e o respectivo número
 def mais_filmes(dados):
     maior = 0
@@ -50,15 +57,34 @@ def mais_filmes(dados):
         if item['filmes'] > maior:
             maior = item['filmes']
             ator = item['nome']
+    
+    # armazena o resultado em um novo arquivo
+    with open("sprint3/desafio/desafio1.txt", "w", encoding="utf-8") as file:
+        file.write("O ator/atriz com maior número de filmes e o respectivo número de filmes:\n\n")
+        file.write(f"{ator}, {maior} filmes")
+        file.close()
+
     return ator, maior
 
+
+# desafio 2
 # retorna a média do número de filmes por autor
 def media_filmes(dados):
     soma = 0
     for ator in dados:
         soma += ator['filmes']
-    return soma/len(dados)
+    media = soma / len(dados)
 
+    # armazena o resultado em um novo arquivo
+    with open("sprint3/desafio/desafio2.txt", "w", encoding="utf-8") as file:
+        file.write("A média do número de filmes por autor:\n\n")
+        file.write(str(media))
+        file.close()
+
+    return media
+
+
+# desafio 3
 # retorna o ator com a maior média por filme
 def maior_media(dados):
     maior = 0
@@ -66,8 +92,17 @@ def maior_media(dados):
         if item['media'] > maior:
             maior = item['media']
             ator = item['nome']
+
+    # armazena o resultado em um novo arquivo
+    with open("sprint3/desafio/desafio3.txt", "w", encoding="utf-8") as file:
+        file.write("O ator/atriz com a maior média por filme:\n\n")
+        file.write(ator)
+        file.close()
+
     return ator
 
+
+# desafio 4
 # retorna uma lista com o(s) filme(s) que mais aparece(m) e sua frequência
 def filme_frequente(dados):
     # cria um dicionário com cada filme individual e a sua frequência
@@ -80,21 +115,29 @@ def filme_frequente(dados):
             filmes[item['1 filme']] += 1
     
     # verifica qual o filme/filmes do dicionário com maior frequência
-    maior = 0
+    maior_frequencia = 0
     frequente = []
     for filme, frequencia in filmes.items():
         # se for encontrada uma frequência maior, limpa a lista e adiciona o filme com a maior frequência apenas
-        if frequencia > maior:
-            maior = frequencia
+        if frequencia > maior_frequencia:
+            maior_frequencia = frequencia
             frequente = []
             frequente.append(filme)
         # se houver mais de 1 filme com a maior frequência atual, adiciona este à lista de filmes com maior frequência
-        elif frequencia == maior:
+        elif frequencia == maior_frequencia:
             frequente.append(filme)
-    return frequente, maior
 
-# retorna uma string pronta para ser exibida em um print da lista passada
-def exibe_listagit(lista):
+    # armazena o resultado em um novo arquivo
+    with open("sprint3/desafio/desafio4.txt", "w", encoding="utf-8") as file:
+        file.write("O nome do(s) filme(s) mais frequente(s) e sua respectiva frequência:\n\n")
+        file.write("Filme, Frequência\n")
+        for filme in frequente:
+            file.write(f"{filme}, {maior_frequencia}")
+        file.close()
+
+    return frequente, maior_frequencia
+
+
     resposta = ""
     c = 0
     for i in lista:
@@ -106,28 +149,34 @@ def exibe_listagit(lista):
         c += 1
     return resposta
 
+
+# desafio 5
 # retorna uma lista dos autores, do mais bem pago para o menos bem pago
 def autores_salario(dados):
+    # cria um dicionário com cada autor e seu pagamento
     pagamento = {}
     for i in dados:
         pagamento[i['nome']] = i['total']
     
+    # ordena o dicionário pelo maior pagamento e adiciona em uma lista apenas o nome do autor
     autores = []
     for i in sorted(pagamento, key=pagamento.get, reverse=True):
         autores.append(i)
+
+    # armazena o resultado em um novo arquivo
+    with open("sprint3/desafio/desafio5.txt", "w", encoding="utf-8") as file:
+        file.write("A lista dos Autores ordenada por pagamento. Do mais bem pago para o menos bem pago:\n\n")
+        for autor in autores:
+            file.write(autor + "\n")
+        file.close()
+
     return autores
 
-# exetuta funções
+
+# executa funções
 dados = extrai()
-
-ator, filmes = mais_filmes(dados)
-print(f"Ator/atriz com maior número de filmes: {ator}. Quantidade de filmes: {filmes}\n")
-
-print(f"A média do número de filmes por autor é: {media_filmes(dados)}\n")
-
-print(f"Ator/atriz com a maior média por filme: {maior_media(dados)}\n")
-
-filme, frequencia = filme_frequente(dados)
-print(f"O(s) filme(s) mais frequente(s) é(são): {exibe_listagit(filme)}, e sua frequência é: {frequencia}\n")
-
-print(exibe_listagit(autores_salario(dados)))
+mais_filmes(dados)
+media_filmes(dados)
+maior_media(dados)
+filme_frequente(dados)
+autores_salario(dados)
