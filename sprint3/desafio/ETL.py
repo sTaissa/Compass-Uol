@@ -57,10 +57,12 @@ def mais_filmes(dados):
     # armazena o resultado em um novo arquivo
     with open("sprint3/desafio/desafio1.txt", "w", encoding="utf-8") as file:
         file.write("O ator/atriz com maior número de filmes e o respectivo número de filmes:\n\n")
-        file.write(f"{ator}, {numero} filmes")
+        file.write("Ator, Número de filmes\n")
+        for nome in ator:
+            file.write(f"{nome}, {numero}")
         file.close()
 
-    return ator, maior
+    return ator, numero
 
 
 # desafio 2
@@ -88,7 +90,8 @@ def maior_media(dados):
     # armazena o resultado em um novo arquivo
     with open("sprint3/desafio/desafio3.txt", "w", encoding="utf-8") as file:
         file.write("O ator/atriz com a maior média por filme:\n\n")
-        file.write(ator)
+        for nome in ator:
+            file.write(nome)
         file.close()
 
     return ator
@@ -164,15 +167,21 @@ def autores_salario(dados):
 
     return autores
 
-# retorna o maior valor de acordo com o dado passado e a qual ator pertence esse valor
+# retorna o maior valor, ou maiores valores de acordo com o dado passado e a qual ator pertence esse valor
 # evita repetição de código em outras funções
 def maior(lista, dado):
     maior = 0
+    nome = []
     for item in lista:
+        # se for encontrada um dado maior, limpa a lista e adiciona o ator com o maior dado apenas
         if item[dado] > maior:
             maior = item[dado]
-            ator = item['nome']
-    return ator, maior
+            nome = []
+            nome.append(item['nome'])
+        # se tiver mais de um dado com o maior valor atual, adiciona o ator a que pertence esse dado à lista de nomes
+        elif item[dado] == maior:
+            nome.append(item['nome'])
+    return nome, maior
 
 # executa funções
 dados = extrai()
