@@ -16,6 +16,11 @@ def impar_par(num):
 
 # solicita 3 números e chama a função que informa se é par ou impar
 for i in range(3):
-    num = input(f"Informe o numero {i+1}: ")
-    print(impar_par(int(num)) + ": " + str(num))
+    num = ''
+    while type(num) != int:
+        try:
+            num = int(input(f"Informe o numero {i+1}: "))
+        except:
+            print("Valor inválido, informe um número")
+    print(impar_par(num) + ": " + str(num))
     

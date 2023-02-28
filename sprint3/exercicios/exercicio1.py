@@ -18,6 +18,12 @@ def ano_100(idade):
 
 # le as variáveis e converte idade para int
 nome = input('Informe seu nome: ')
-idade = int(input('Informe sua idade: '))
+idade = ''
+
+while type(idade) != int:
+    try:
+        idade = int(input('Informe sua idade: '))
+    except:
+        print("Valor inválido, informe um número")
 
 print(ano_100(idade))
