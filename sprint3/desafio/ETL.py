@@ -94,7 +94,7 @@ def filme_frequente(dados):
     return frequente, maior
 
 # retorna uma string pronta para ser exibida em um print da lista passada
-def exibe_filmes(lista):
+def exibe_listagit(lista):
     resposta = ""
     c = 0
     for i in lista:
@@ -106,16 +106,28 @@ def exibe_filmes(lista):
         c += 1
     return resposta
 
+# retorna uma lista dos autores, do mais bem pago para o menos bem pago
+def autores_salario(dados):
+    pagamento = {}
+    for i in dados:
+        pagamento[i['nome']] = i['total']
+    
+    autores = []
+    for i in sorted(pagamento, key=pagamento.get, reverse=True):
+        autores.append(i)
+    return autores
+
 # exetuta funções
 dados = extrai()
 
 ator, filmes = mais_filmes(dados)
-#print(f"Ator/atriz com maior número de filmes: {ator}. Quantidade de filmes: {filmes}\n")
+print(f"Ator/atriz com maior número de filmes: {ator}. Quantidade de filmes: {filmes}\n")
 
-#print(f"A média do número de filmes por autor é: {media_filmes(dados)}\n")
+print(f"A média do número de filmes por autor é: {media_filmes(dados)}\n")
 
-#print(f"Ator/atriz com a maior média por filme: {maior_media(dados)}\n")
+print(f"Ator/atriz com a maior média por filme: {maior_media(dados)}\n")
 
 filme, frequencia = filme_frequente(dados)
-print(f"O(s) filme(s) mais frequente(s) é(são): {exibe_filmes(filme)}, e sua frequência é: {frequencia}\n")
+print(f"O(s) filme(s) mais frequente(s) é(são): {exibe_listagit(filme)}, e sua frequência é: {frequencia}\n")
 
+print(exibe_listagit(autores_salario(dados)))
