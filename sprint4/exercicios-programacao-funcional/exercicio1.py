@@ -21,9 +21,7 @@ def extrai(caminho):
         file.close()
 
     def filtra():
-        # a divisão que dá 0 seria par, mas como 0 é false, dá o contrário
-        # o lambda inverte: quando a divisão der 1 (True) retorna False, se der 0 (False) retorna True
-        par = lambda x: False if x % 2 else True
+        par = lambda x: x % 2 == 0
 
         # filtra(filter) somente os pares da lista, ordena(sorted) esse resultado em ordem decrescente(reverse=True) e pega somente os 5 primeiros valores([0:5])
         return list(sorted(filter(par, num), reverse=True))[0:5]
