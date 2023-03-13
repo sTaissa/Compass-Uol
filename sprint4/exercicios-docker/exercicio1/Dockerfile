@@ -1,7 +1,7 @@
 FROM python:3 
 
-WORKDIR /sprint4/exercicios-docker/exercicio1
+WORKDIR /sprint4/exercicios-docker/exercicio1 
 
-COPY ..
+COPY . .
 
 CMD ["python", "./carguru.py"]
