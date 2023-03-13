@@ -45,6 +45,7 @@ def extrai(caminho):
 
         # retorna o relatório textual para cada aluno
         # a média é a soma das 3 notas / pelo tamamnho da lista e arredondado pra 2 casas
+        file.close()
         return list(map(lambda x: print(f"Nome: {x[0]} Notas: {x[1]} Média: {round(sum(x[1])/len(x[1]), 2)}"), lista))
     return filtra()
 
