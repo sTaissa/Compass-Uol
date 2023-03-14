@@ -15,8 +15,6 @@ def mascara(palavra):
 
 # exibe o resultado da função passada como parâmetro até que seja digitado "sair"
 def repete(func):
-    str = ""
-
     while True:
         str = input("Informe a expressão a ser mascarada ou 'sair': ")
 
