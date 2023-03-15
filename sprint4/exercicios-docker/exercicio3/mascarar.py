@@ -20,6 +20,7 @@ def repete(func):
 
         if str.lower() != "sair":
             print(func(str))
+            print()
         else: 
             break
 

@@ -17,8 +17,7 @@
 
 ### Mentor
 
-[Mathues Toledo](https://github.com/toledkrw)
-
+[Matheus Toledo](https://github.com/toledkrw)
 
 <br>
 

@@ -43,16 +43,15 @@
 - [x] Python
 - [x] Exercício 3.0
 
-### Sprint 4 ![a](https://img.shields.io/badge/in_progress-yellow)
-- [ ] Programação funcional
-- [ ] Python
-- [ ] Docker
-- [ ] Estatística descritiva
-- [ ] Exercício 4.0
+### [Sprint 4](/sprint4) ![a](https://img.shields.io/badge/done-green)
+- [x] Programação funcional
+- [x] Python
+- [x] Docker
+- [x] Estatística descritiva
+- [x] Exercício 4.0
 
-### Sprint 5 ![a](https://img.shields.io/badge/to_do-red)
+### Sprint 5 ![a](https://img.shields.io/badge/in_progress-yellow)
 - [ ] Computação em núvem (AWS)
-- [ ] Exercício 5.0
 
 ### Sprint 6 ![a](https://img.shields.io/badge/to_do-red)
 - [ ] Computação em núvem (AWS)
