@@ -198,7 +198,7 @@ extrai("sprint4/exercicios-programacao-funcional/estudantes.csv")
 
 <br>
 
-### Extração 1
+### Exercício 1
 >Construa uma imagem a partir de um arquivo de instruções (Dockerfile) que execute o código [carguru.py](/sprint4/exercicios-docker/exercicio1/carguru.py). Após, execute um container a partir da imagem criada.
 
 >Registre aqui o conteúdo de seu arquivo Dockerfile e o comando utilizado para execução do container.
@@ -213,10 +213,12 @@ COPY . .
 CMD ["python", "./carguru.py"]
 ```
 Comando para criar a imagem:
-[E1 build](/sprint4/imagens-sprint4/build_exercicio1.PNG)
+
+![E1 build](/sprint4/imagens-sprint4/build_exercicio1.PNG)
 
 Comando para criar e executar o container:
-[E1 run](/sprint4/imagens-sprint4/run_exercicio1.PNG)
+
+![E1 run](/sprint4/imagens-sprint4/run_exercicio1.PNG)
 
 ### Exercício 2
 >É possível reutilizar containers? Em caso positivo, apresente o comando necessário para reiniciar um dos containers parados em seu ambiente Docker? Não sendo possível reutilizar, justifique sua resposta.
@@ -224,7 +226,8 @@ Comando para criar e executar o container:
 Sim, é possível, o comando usado apra isso é o "docker start [container]", podendo usar flags também, consultar o "start --help"
 
 Utilizando o container do exercício anterior como exemplo:
-[E2 start](/sprint4/imagens-sprint4/start_exercicio2.PNG)
+
+![E2 start](/sprint4/imagens-sprint4/start_exercicio2.PNG)
 
 ### Exercício 2
 >Agora vamos exercitar a criação de um container que permita receber inputs durante sua execução. Seguem as instruções.
@@ -261,6 +264,7 @@ def repete(func):
             break
 
 repete(mascara)
+
 ```
 
 Dockerfile:
@@ -275,7 +279,9 @@ CMD ["python", "./mascarar.py"]
 ```
 
 Comando para criar a imagem:
-[E3 build](/sprint4/imagens-sprint4/build_exercicio3.PNG)
+
+![E3 build](/sprint4/imagens-sprint4/build_exercicio3.PNG)
 
 Comando para criar e rodar o container:
-[E3 run](/sprint4/imagens-sprint4/run_exercicio3.PNG)
+
+![E3 run](/sprint4/imagens-sprint4/run_exercicio3.PNG)
