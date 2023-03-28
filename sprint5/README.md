@@ -23,11 +23,11 @@
 - Exam Prep: AWS Certified Cloud Practitioner
 
 ### Certificados
-- [AWS Technical](/certificados/sprint5_AWS-Tecnical.pdf)
-- [AWS Sales](/certificados/sprint5_AWS-Sales.pdf)
-- [AWS Cloud Economics](/certificados/sprint5_AWS-CloudEconomics.pdf)
-- [AWS Cloud Quest: Cloud Practitioner](/certificados/sprint5_AWS-CloudQuest-CloudPractioner.pdf)
-- [AWS Exam Prep Certification Cloud Practitioner](/certificados/sprint5_AWS-ExamPrep.pdf)
+- [AWS Technical](/certificados/sprint5_AWS-Tecnical.PNG)
+- [AWS Sales](/certificados/sprint5_AWS-Sales.PNG)
+- [AWS Cloud Economics](/certificados/sprint5_AWS-CloudEconomics.PNG)
+- [AWS Cloud Quest: Cloud Practitioner](/certificados/sprint5_AWS-CloudQuest-CloudPractioner.PNG)
+- [AWS Exam Prep Certification Cloud Practitioner](/certificados/sprint5_AWS-ExamPrep.PNG)
 
 <br>
 
