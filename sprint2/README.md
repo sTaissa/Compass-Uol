@@ -12,16 +12,21 @@
 <a id="sobre"></a>
 ## 📎 Sobre
 
-### Conteúdos
-
-- SQL
-- Big Data
-
-
-
 ### Mentor
 
 [Antonio Alex de Souza](https://github.com/alexsouza-compass)
+
+### Cursos
+- [SQL para Análise de Dados: Do básico ao avançado](https://www.udemy.com/course/sql-para-analise-de-dados/)
+- [Big Data Fundamentos 3.0](https://www.datascienceacademy.com.br/course/big-data-fundamentos-3)
+
+### Certificados
+- [SQL](/certificados/sprint2_sql.jpg)
+- [Big Data](/certificados/sprint2_big-data.jpg)
+
+### Anotações
+- [Anotações sobre SQL](https://lowly-pear-52e.notion.site/SQL-para-An-lise-de-Dados-60d36f8a29d5410188b7d2d6298418b3)
+- [Anotações sobre Big Data](https://lowly-pear-52e.notion.site/Big-Data-Fundamentos-a7cf5395117348c395f39cadcb4e2d1e)
 
 
 <br>

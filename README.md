@@ -25,9 +25,9 @@
 
 ### Introdução ![a](https://img.shields.io/badge/in_progress-yellow)
 - [ ] Segurança em Aplicações WEB
-- [ ] Metodologia Ágil
+- [x] Metodologia Ágil
 
-### Sprint 1 ![a](https://img.shields.io/badge/done-green)
+### [Sprint 1](/sprint1) ![a](https://img.shields.io/badge/done-green)
 - [x] Git e GitHub
 - [x] Sistemas GNU/Linux 
 - [x] Exercício 1.0
@@ -50,10 +50,10 @@
 - [x] Estatística descritiva
 - [x] Exercício 4.0
 
-### Sprint 5 ![a](https://img.shields.io/badge/in_progress-yellow)
-- [ ] Computação em núvem (AWS)
+### [Sprint 5](/sprint5/) ![a](https://img.shields.io/badge/done-green)
+- [x] Computação em núvem (AWS)
 
-### Sprint 6 ![a](https://img.shields.io/badge/to_do-red)
+### Sprint 6 ![a](https://img.shields.io/badge/in_progress-yellow)
 - [ ] Computação em núvem (AWS)
 - [ ] Exercício 6.0
 

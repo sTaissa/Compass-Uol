@@ -11,13 +11,15 @@
 <a id="sobre"></a>
 ## 📎 Sobre
 
-### Conteúdos
-
-- Python
-
 ### Mentor
 
 [Matheus Toledo](https://github.com/toledkrw)
+
+### Cursos
+- [Programação em Python do básico ao avançado](https://www.udemy.com/course/curso-de-programacao-em-python-do-basico-ao-avancado/) (Apenas uma parte do curso)
+
+### Anotações
+- [Anotações sobre Python](https://lowly-pear-52e.notion.site/Python-a4660e09cb7b48b789d7f56407281078)
 
 <br>
 

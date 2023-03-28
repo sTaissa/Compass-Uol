@@ -1,4 +1,4 @@
-<h1 align="center"> Sprint 3</h1>
+<h1 align="center"> Sprint 4</h1>
 
 <p align="center">
  <a href="#sobre">Sobre</a> •
@@ -11,16 +11,23 @@
 <a id="sobre"></a>
 ## 📎 Sobre
 
-### Conteúdos
-
-- Python funcional
-- Docker
-- Estatística descritiva
-
 ### Mentor
 
 [Rodrigo Guimarães](https://github.com/rodrigo-sguimaraes)
 
+### Cursos
+- Artigo [Programação funcional: O que é? | Alura](https://www.alura.com.br/artigos/programacao-funcional-o-que-e)
+- Markdown com explicação [python-funcional/00_introducao.md at master · dunossauro/python-funcional](https://github.com/dunossauro/python-funcional/blob/master/roteiros/00_introducao.md)
+- [Docker para Desenvolvedores (com Docker Swarm e Kubernetes)](https://www.udemy.com/course/docker-para-desenvolvedores-com-docker-swarm-e-kubernetes/?utm_source=adwords-intl&utm_medium=udemyads&utm_campaign=Docker_new_v.PROF_la.PT_cc.BR_ti.5470&utm_content=deal4584&utm_term=_._ag_125593859508_._kw__._ad_494752817465_._de_c_._dm__._pl__._ti_dsa-1208106377687_._li_9047798_._pd__._&gclid=CjwKCAjwoIqhBhAGEiwArXT7K0ddLdm9pC0336i3Oqlv8wpm_CF8xwEvSrNfRGAF-Uy5hzsWsUmMtxoCEpsQAvD_BwE)
+- [Estatística Descritiva com Python](https://www.udemy.com/course/estatistica-descritiva-com-python/?utm_source=adwords-intl&utm_medium=udemyads&utm_campaign=LongTail_new_la.PT_cc.BR&utm_content=deal4584&utm_term=_._ag_118044111482_._kw__._ad_491671393381_._de_c_._dm__._pl__._ti_dsa-1131315795588_._li_9047798_._pd__._&gclid=CjwKCAjwoIqhBhAGEiwArXT7KzaCVK0QE72bKC_JltqiCVMAqUVcjZml1yngt6eEpeOQ2-6eSg12HBoCIeoQAvD_BwE)
+
+### Certificados
+- [Docker](/certificados/sprint4_docker.jpg)
+- [Estatística Descritiva com Python](/certificados/sprint4_estatistica.jpg)
+
+### Anotações
+- [Docker](https://lowly-pear-52e.notion.site/Docker-bf78212742614b048707ee7d6769563f)
+- [Estatística descritiva com Python](https://lowly-pear-52e.notion.site/Estat-stica-descritiva-com-python-4bc902cef09a4e6d92dd2b3c0e4bb71f)
 
 <br>
 
