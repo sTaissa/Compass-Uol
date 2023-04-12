@@ -53,12 +53,11 @@
 ### [Sprint 5](/sprint5/) ![a](https://img.shields.io/badge/done-green)
 - [x] Computação em núvem (AWS)
 
-### Sprint 6 ![a](https://img.shields.io/badge/in_progress-yellow)
-- [ ] Computação em núvem (AWS)
-- [ ] Exercício 6.0
+### [Sprint 6](/sprint6/) ![a](https://img.shields.io/badge/done-green)
+- [x] Computação em núvem (AWS)
+- [x] Exercício 6.0
 
-### Sprint 7 ![a](https://img.shields.io/badge/to_do-red)
-- [ ] Arquitetura Lambda
+### Sprint 7 ![a](https://img.shields.io/badge/in_progress-yellow)
 - [ ] Apache Hadoop
 - [ ] Apache Spark
 - [ ] Exercício 7.0

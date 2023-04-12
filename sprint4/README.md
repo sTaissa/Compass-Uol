@@ -236,7 +236,7 @@ Utilizando o container do exercício anterior como exemplo:
 
 ![E2 start](/sprint4/imagens-sprint4/start_exercicio2.PNG)
 
-### Exercício 2
+### Exercício 3
 >Agora vamos exercitar a criação de um container que permita receber inputs durante sua execução. Seguem as instruções.
 
 >Criar novo script Python que implementa o algoritmo a seguir:
