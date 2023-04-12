@@ -53,9 +53,11 @@
 - [404.html](/sprint6/labs/arquivos/404.html)
 
 Bucket com os arquivos pedidos e o acesso e políticas públicas:
+
 ![bucket publico](/sprint6/labs/lab1%20bucket.PNG)
 
 Site rodando hospedado estaticamente no S3 criado:
+
 ![site lab1](/sprint6/labs/lab1%20site.PNG)
 
 ### Lab AWS Athena
@@ -82,6 +84,7 @@ ORDER BY decada --Seleciona apenas os 3 primeiros nomes mais usados de cada déc
 ```
 
 Resultado da query:
+
 ![query1](/sprint6/labs/lab2%20resultado1.PNG)
 ![query2](/sprint6/labs/lab2%20resultado2.PNG)
 
@@ -114,4 +117,5 @@ def lambda_handler(event, context):
 ```
 
 Saída da função:
+
 ![saida função](/sprint6/labs/lab3%20saida.PNG)
