@@ -6,17 +6,17 @@ def extrai():
 
 # 1- Identifique o ator/atriz com maior número de filmes e o respectivo número de filmes
 def mais_filmes(dados):
-    # identifica o ator (ou atores) com o maior número de filmes
+    # identifica o ator (ou atores caso haja mais de um) com o maior número de filmes
     maiores = dados.nlargest(1, "Number of Movies", keep="all")
     ator = maiores['Actor'].values
     filmes = maiores['Number of Movies'].values
 
     # printa os valores pedidos
     print("Exercício 1")
-    print("Ator com maior número de filmes: ", end='')
     for nome in ator:
-        print(nome)
-    print("Número de filmes:", filmes[0], "\n")
+        print("O ator/atriz com maior número de filmes é {} com {} filmes".format(nome, str(filmes[0])))
+    
+    print()
 
     # retorna o dataframe com o nome e número de filmes para possível uso
     return maiores[['Actor', 'Number of Movies']]
@@ -27,7 +27,7 @@ def media_filmes(dados):
 
     # printa os valores pedidos
     print("Exercício 2")
-    print("Média do número de filmes dos atores:", media, "\n")
+    print("A média do número de filmes é:", media, "\n")
 
     return media    
 
@@ -38,26 +38,25 @@ def maior_media(dados):
     ator = maiores['Actor'].values
 
     print("Exercício 3")
-    print("Ator com maior média por filme: ", end='')
     for nome in ator:
-        print(nome)
+        print("O ator/atriz com maior média por filme é", nome)
+    
     print()
     # retorna a linha com o nome do ator 
     return ator
 
 # 4- Apresente o nome do(s) filme(s) mais frequente(s) e sua respectiva frequência
 def filme_frequente(dados):
-    # agrupa pela coluna '#1 Movie', o filme (ou filmes) que tiver maior contagem de atores é o mais frequente
-    freq = dados.groupby('#1 Movie').count()
-    maiores = freq.nlargest(1, "Actor", keep="all")
-    filme = maiores['Actor']
+    # conta a quantidade de vezes que cada filme aparece, já em ordem decrescente
+    freq = dados['#1 Movie'].value_counts()
 
+    # exibe os dados no formato pedido
     print("Exercício 4")
-    print("Filme mais frequente: ", end='')
-    for freq in filme.index:
-        print(freq)
-    print("Frequência:", filme[0])
-    return filme
+    c = 1
+    for filme, f in freq.items():
+        print("{} - O filme {} aparece {} vez(es) no dataset".format(c, filme, f))
+        c += 1
+    return freq
 
     
 
