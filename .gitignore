@@ -1,0 +1,2 @@
+# ignore o arquivo com variáveis de ambiente com chaves de acesso aws do docker
+.env
