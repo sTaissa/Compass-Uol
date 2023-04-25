@@ -57,12 +57,12 @@
 - [x] Computação em núvem (AWS)
 - [x] Exercício 6.0
 
-### Sprint 7 ![a](https://img.shields.io/badge/in_progress-yellow)
-- [ ] Apache Hadoop
-- [ ] Apache Spark
-- [ ] Exercício 7.0
+### [Sprint 7](/sprint7/) ![a](https://img.shields.io/badge/done-green)
+- [x] Apache Hadoop
+- [x] Apache Spark
+- [x] Exercício 7.0
 
-### Sprint 8 ![a](https://img.shields.io/badge/to_do-red)
+### Sprint 8 ![a](https://img.shields.io/badge/in_progress-yellow)
 - [ ] Apache Spark Batch
 - [ ] Exercício 8.0
 
