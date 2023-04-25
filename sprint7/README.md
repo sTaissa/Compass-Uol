@@ -39,12 +39,10 @@ Diego Antonio Lusa
 
 Eu fiz em um notebook Jupyter, com cada célula sendo um exercício e sua respectiva saída, acesse para conferir: [notebook](/sprint7/tarefa1/tarefa1.ipynb)
 
-
+<br>
 
 <a id="tarefa2"></a>
 ## 📝 Tarefa 2 - Apache Spark, Contador de Palavras
-
-<br>
 
 ### Exercício 1
 >Neste exercícios iremos construir um job Spark por meio de um container Docker
@@ -94,6 +92,7 @@ for i in ordenado.collect():
 ```
 
 Resultado no terminal Pyspark:
+
 ![resultado tarefa 2](/sprint7/imagens-readme/tarefa2-resultado.PNG)
 
 <a id="desafio"></a>
