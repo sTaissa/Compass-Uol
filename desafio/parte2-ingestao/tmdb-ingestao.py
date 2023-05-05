@@ -1,3 +1,8 @@
+"""
+Lembrando que o código foi feito para rodar no AWS Lambda na minha conta, onde foram configuradas 
+bibliotecas e políticas de acesso.
+"""
+
 import json
 import requests
 import pandas as pd
@@ -19,8 +24,6 @@ def lambda_handler(event, context):
     #filtra apenas os filmes de animação do século 21 do csv
     filmes_imdb['anoLancamento'] = filmes_imdb['anoLancamento'].replace('\\N', '0')
     imdb_filtro = filmes_imdb[(filmes_imdb.genero.str.contains("Animation", regex=False)) & (filmes_imdb.anoLancamento.astype(int) >= 2000)]
-
-    i = 0
     
     #passa por cada filme filtrado do csv, pegando o id e usando pra descobrir o id correspondente no tmdb
     for filme in imdb_filtro.values:
@@ -39,10 +42,11 @@ def lambda_handler(event, context):
             response = requests.get(url)
             tmdb = response.json()
             
-            file_path = f'Raw/TMDB/JSON/2023/05/04/filme_{i}.json'
+            file_name = f"{tmdb['title'].replace(' ', '-')}.json"
+            file_name = file_name.replace('/', '\\')
+            file_path = f'Raw/TMDB/JSON/2023/05/05/{file_name}'
             #armazena o resultado da requisição como json no s3 no caminho especificado
             S3_CLIENT.put_object(Body=json.dumps(tmdb, indent = 4), Bucket=BUCKET, Key=file_path)
-            i += 1
         except:
             continue
         
