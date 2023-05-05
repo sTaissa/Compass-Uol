@@ -1,2 +1,7 @@
 # ignore o arquivo com variáveis de ambiente com chaves de acesso aws do docker
 .env
+
+#ignore a chave de api do tmdb
+apikey.py
+#ignore o arquivo gerado pelo apikey para execução
+__pycache__
