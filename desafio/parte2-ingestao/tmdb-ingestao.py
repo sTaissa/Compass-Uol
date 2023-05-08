@@ -1,18 +1,20 @@
 """
 Lembrando que o código foi feito para rodar no AWS Lambda na minha conta, onde foram configuradas 
-bibliotecas e políticas de acesso.
+bibliotecas, políticas de acesso e as credenciais do boto client não são necessárias.
 """
 
 import json
 import requests
 import pandas as pd
 import boto3
+import apikey
 
 def lambda_handler(event, context):
     #variáveis a serem usadas ao longo do código
     S3_CLIENT = boto3.client('s3')
     BUCKET = 'datalake-taissa'
-    API_KEY = "985ad7c770a53b6eb66b4668e4aa1f73"
+    #localmente a chave está em um arquivo python, na AWS Lambda a chave vai no código já que apenas eu tenho acesso
+    API_KEY = apikey.api_key
         
     #lê o csv com filmes do imdb armazenado no s3
     objeto = S3_CLIENT.get_object(Bucket=BUCKET, Key='Raw/Local/CSV/Movies/2023/04/24/movies.csv')
@@ -33,7 +35,7 @@ def lambda_handler(event, context):
         url = f"https://api.themoviedb.org/3/find/{id_imdb}?api_key={API_KEY}&language=pt-BR&external_source=imdb_id"
         response = requests.get(url)
         data = response.json()
-        
+    
         #no caso de um filme do csv do imdb não ter uma correspondencia no tmdb ele vai para o próximo filme
         try:
             #faz uma segunda requisição para pegar mais detalhes sobre o filme
@@ -42,6 +44,7 @@ def lambda_handler(event, context):
             response = requests.get(url)
             tmdb = response.json()
             
+            #usa o nome do filme como nome do arquivo, substituindo espaços por - e / por \\, pois / cria uma pasta no s3
             file_name = f"{tmdb['title'].replace(' ', '-')}.json"
             file_name = file_name.replace('/', '\\')
             file_path = f'Raw/TMDB/JSON/2023/05/05/{file_name}'
