@@ -5,3 +5,6 @@
 apikey.py
 #ignore o arquivo gerado pelo apikey para execução
 __pycache__
+
+#ignore o arquivo gerado pela tarefa 3, pois é muito grande para ir ao HitHub sem ser compresso
+nomes_aleatorios.txt
