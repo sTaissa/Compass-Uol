@@ -8,6 +8,7 @@
  <a href="#sobre">Sobre o programa</a> •
  <a href="#conteudos">Conteúdos estudados</a> •
  <a href="#certificados">Certificados</a> •
+ <a href="#desafio">Desafio final</a> •
  <a href="#autor">Autor</a>
 </p>
 
@@ -62,12 +63,12 @@
 - [x] Apache Spark
 - [x] Exercício 7.0
 
-### Sprint 8 ![a](https://img.shields.io/badge/in_progress-yellow)
-- [ ] Apache Spark Batch
-- [ ] Exercício 8.0
+### [Sprint 8](/sprint8/) ![a](https://img.shields.io/badge/done-green)
+- [x] Apache Spark Batch
+- [x] Exercício 8.0
 
-### Sprint 9 ![a](https://img.shields.io/badge/to_do-red)
-- [ ] Apache Spark Streaming
+### Sprint 9 ![a](https://img.shields.io/badge/in_progress-yellow)
+- [ ] Exercícios 9.0
 
 ### Sprint 10 ![a](https://img.shields.io/badge/to_do-red)
 - [ ] Data Warehouse
@@ -81,6 +82,15 @@
 ## 🗂️ Certificados
 
 <a href="/certificados">Acesse os certificados obtidos durante o programa</a>
+
+<br>
+
+<a id="desafio"></a>
+## 📊 Desafio final
+
+Desde a sprint 8 trabalhamos em nosso desafio final em paralelo aos estudos. É um desafio que une os conteúdos estudados na prática e demonstra que realmente aprendemos.
+
+Acesse meu desafio final: [**Melhores e piores animações da Disney lançadas no século 21**](/desafio/)
 
 <br>
 
