@@ -27,6 +27,7 @@ def lambda_handler(event, context):
     filmes_imdb['anoLancamento'] = filmes_imdb['anoLancamento'].replace('\\N', '0')
     imdb_filtro = filmes_imdb[(filmes_imdb.genero.str.contains("Animation", regex=False)) & (filmes_imdb.anoLancamento.astype(int) >= 2000)]
     
+    i = 0
     #passa por cada filme filtrado do csv, pegando o id e usando pra descobrir o id correspondente no tmdb
     for filme in imdb_filtro.values:
         id_imdb = filme[0]
@@ -35,7 +36,7 @@ def lambda_handler(event, context):
         url = f"https://api.themoviedb.org/3/find/{id_imdb}?api_key={API_KEY}&language=pt-BR&external_source=imdb_id"
         response = requests.get(url)
         data = response.json()
-    
+        
         #no caso de um filme do csv do imdb não ter uma correspondencia no tmdb ele vai para o próximo filme
         try:
             #faz uma segunda requisição para pegar mais detalhes sobre o filme
@@ -44,10 +45,8 @@ def lambda_handler(event, context):
             response = requests.get(url)
             tmdb = response.json()
             
-            #usa o nome do filme como nome do arquivo, substituindo espaços por - e / por \\, pois / cria uma pasta no s3
-            file_name = f"{tmdb['title'].replace(' ', '-')}.json"
-            file_name = file_name.replace('/', '\\')
-            file_path = f'Raw/TMDB/JSON/2023/05/05/{file_name}'
+            file_path = f'Raw/TMDB/JSON/2023/05/17/filme{i}.json'
+            i += 1
             #armazena o resultado da requisição como json no s3 no caminho especificado
             S3_CLIENT.put_object(Body=json.dumps(tmdb, indent = 4), Bucket=BUCKET, Key=file_path)
         except:
