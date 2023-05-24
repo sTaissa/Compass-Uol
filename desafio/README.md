@@ -142,3 +142,54 @@ Além disso, foi preciso configurar uma política do bucket para permitir esse a
     ]
 }
 ```
+
+<a id="parte3"></a>
+## 📤 Parte 3 - Transformação e filtragem dos dados
+
+![parte 3 do desafio](/desafio/imagens-readme/parte3.png)
+
+### Processamento -  Camada Trusted
+>A camada Trusted de um data lake corresponde àquela em que os dados encontram-se limpos e são confiáveis. É resultado da integração das diversas fontes de origem, que encontram-se na camada anterior, que chamamos de Raw.
+>
+>Aqui faremos uso do Apache Spark no processo, integrando dados existentes na camada Raw Zone. O objetivo é gerar uma visão padronizada dos dados, persistida no S3,  compreendendo a Trusted Zone do data lake.  Nossos jobs Spark serão criados por meio do AWS Glue.
+>
+>Todos os dados serão persistidos na Trusted no formato PARQUET, particionados por data de criação do tweet  ou data de coleta do TMDB (dt=<ano\mês\dia> exemplo: dt=2018\03\31). A exceção fica para os dados oriundos do processamento batch (CSV), que não precisam ser particionados.
+>
+>Iremos separar o processamento em dois jobs: o primeiro, para carga histórica, será responsável pelo processamento dos arquivos CSV  e o segundo, para carga de dados do Twitter/TMDB. Lembre-se que suas origens serão os dados existentes na RAW Zone.
+
+Código com o job Spark do Glue para processar os dados do arquivo de [movies.csv](/desafio/parte1-etl/dados/Filmes%2Be%2BSeries.zip) e salvá-los na trusted: [trusted movies](/desafio/parte3/processamento-trusted/trusted-csv.py)
+
+Código com o job Spark do Glue para processar os dados dos arquivos json gerados a partir da API TMDB na etapa anterior: [trusted TMDB](/desafio/parte3/processamento-trusted/trusted-json.py)
+
+Código com o job Spark do Glue para processar os dados do arquivo [oscar.csv](/desafio/parte1-etl/dados/oscar.csv) criado por mim para complementar a análise: [trusted oscar](/desafio/parte3/processamento-trusted/trusted-oscar.py)
+
+Arquivos parquet salvos na camada trusted no meu bucket: 
+![bucket trusted](/desafio/imagens-readme/parte3-trusted.png)
+
+<br>
+
+### Modelagem de dados da refined
+
+>A camada Refined corresponde à camada de um data lake em que os dados estão prontos para análise e extração de insights. Sua origem corresponde aos dados da camada anterior, a Trusted.
+>
+>Devemos pensar em estruturar os dados seguindo os princípios de modelagem multidimensional, a fim de permitir consultas sobre diferentes perspectivas.
+>
+>Crie a modelagem dimensional com os dados que irá usar para a análise final
+
+Modelos de dados que será usado para criar a camada refined:
+![modelagem refined](/desafio/imagens-readme/parte3-modelagem.PNG)
+
+<br>
+
+### Processamento - Camada Refined
+>Na atividade anterior, você definiu seu modelo de dados da camada Trusted. Agora é tempo de processar os dados da camada Trusted, armazena-os na Refined, de acordo com seu modelo.
+>
+>Aplicaremos novamente o Apache Spark no processo, utilizando jobs cuja origem sejam dados da camada Trusted Zone e e o destino, a camada Refined Zone.  Aqui, novamente, todos os dados serão persistidos no formato PARQUET, particionados, se necessário,  de acordo com as necessidades definidas para a camada de visualização.
+
+Código com o job Saprk do Glue para processar os dados que irão para a camada refined e criar as tabelas no Glue Catalog: [código refined](/desafio/parte3/processamento-refined/refined.py)
+
+Camada refined criada no bucket com os arquivos parquet:
+![bucket refined](/desafio/imagens-readme/parte3-refined.PNG)
+
+Tabelas criadas no Glue Catalog:
+![glue catalog](/desafio/imagens-readme/parte3-glue-catalog.PNG)

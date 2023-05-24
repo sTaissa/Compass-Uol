@@ -67,14 +67,13 @@
 - [x] Apache Spark Batch
 - [x] Exercício 8.0
 
-### Sprint 9 ![a](https://img.shields.io/badge/in_progress-yellow)
-- [ ] Exercícios 9.0
+### [Sprint 9](/sprint9/) ![a](https://img.shields.io/badge/done-green)
+- [x] Exercícios 9.0
 
-### Sprint 10 ![a](https://img.shields.io/badge/to_do-red)
-- [ ] Data Warehouse
-- [ ] Visualização de dados
+### Sprint 10 ![a](https://img.shields.io/badge/in_progress-yellow)
+- [ ] AWS QuickSight
+- [ ] Workshop QuickSight
 - [ ] Exercício 10.0
-- [ ] Exercício 10.1
 
 <br> 
 
