@@ -52,6 +52,9 @@ df = spark.read.format("csv").option("sep","|").schema(schema).load(source_file)
 #retira a primeira linha que é o cabeçalho com erros do csv
 df = df.filter(df['id'] != 'id')
 
+#retira filmes duplicados 
+df = df.drop_duplicates(subset=['id'])
+
 #transforma \N em nulos para facilitar a analise
 df_nulls = df
 for column in columns:
@@ -62,7 +65,5 @@ df_coalesce = df_nulls.coalesce(1)
 
 #salva como parquet no s3
 df_coalesce.write.parquet(target_path)
-    
-parquet_df = spark.read.parquet(target_path)
 
 job.commit()

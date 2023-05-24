@@ -22,3 +22,5 @@ def upload_file(origem, bucket, destino):
 
 print(upload_file('dados/movies.csv', 'datalake-taissa', 'Raw/Local/CSV/Movies/2023/04/24/movies.csv'))
 print(upload_file('dados/series.csv', 'datalake-taissa', 'Raw/Local/CSV/Series/2023/04/24/series.csv'))
+#sobe um arquivo csv feito por mim com a lista de filmes premiados pelo Oscar como melhores animações
+print(upload_file('dados/oscar.csv', 'datalake-taissa', 'Raw/Local/CSV/Oscar/2023/05/23/oscar.csv'))

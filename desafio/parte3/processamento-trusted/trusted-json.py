@@ -47,6 +47,4 @@ df = df.coalesce(1)
 #salva o arquivo em parquet
 df.write.parquet(target_path)
 
-parquet_df = spark.read.parquet(target_path)
-
 job.commit()
