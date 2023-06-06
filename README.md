@@ -24,8 +24,8 @@
 <a id="conteudos"></a>
 ## 📚 Conteúdos do programa
 
-### Introdução ![a](https://img.shields.io/badge/in_progress-yellow)
-- [ ] Segurança em Aplicações WEB
+### Introdução ![a](https://img.shields.io/badge/done-green)
+- [x] Segurança em Aplicações WEB
 - [x] Metodologia Ágil
 
 ### [Sprint 1](/sprint1) ![a](https://img.shields.io/badge/done-green)
@@ -70,10 +70,10 @@
 ### [Sprint 9](/sprint9/) ![a](https://img.shields.io/badge/done-green)
 - [x] Exercícios 9.0
 
-### Sprint 10 ![a](https://img.shields.io/badge/in_progress-yellow)
-- [ ] AWS QuickSight
-- [ ] Workshop QuickSight
-- [ ] Exercício 10.0
+### [Sprint 10](/sprint10/) ![a](https://img.shields.io/badge/done-green)
+- [x] AWS QuickSight
+- [x] Workshop QuickSight
+- [x] Exercício 10.0
 
 <br> 
 
@@ -89,7 +89,7 @@
 
 Desde a sprint 8 trabalhamos em nosso desafio final em paralelo aos estudos. É um desafio que une os conteúdos estudados na prática e demonstra que realmente aprendemos.
 
-Acesse meu desafio final: [**Melhores e piores animações da Disney lançadas no século 21**](/desafio/)
+Acesse meu desafio final: [**Melhores e piores animações do século 21**](/desafio/)
 
 <br>
 

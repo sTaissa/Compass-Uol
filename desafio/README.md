@@ -18,7 +18,7 @@ Ao final do programa de bolsas precisamos entregar um desafio: ingerir dados em 
 ### Tema
 Cada squad recebeu um gênero de filmes/séries para trabalhar em cima, meus gêneros são animação e/ou comédia.
 
-Com base nisso o tema da minha análise e desafio final é: **Os melhores e piores filmes da Disney lançados no século 21**
+Com base nisso o tema da minha análise e desafio final é: **As melhores e piores animações lançadas no século 21**, tendo como base dados financeiros, premiações do Oscar e avaliações populares.
 
 <a id="parte1"></a>
 ## 📤 Parte 1 - ETL
@@ -193,3 +193,41 @@ Camada refined criada no bucket com os arquivos parquet:
 
 Tabelas criadas no Glue Catalog:
 ![glue catalog](/desafio/imagens-readme/parte3-glue-catalog.PNG)
+
+<a id="parte4"></a>
+## 📊 Parte 4 - Consumo e apresentação dos dados
+
+>Você deverá criar um dashboard no AWS QuickSight, utilizando como fonte de dados as tabelas que estão na camada Refined do data lake. Considere utilizar o Athena como tipo de datasource.
+>
+>Seu dashboard deve conter, no mínimo 3 tipos de gráficos diferentes.
+>
+>![parte 4](/desafio/imagens-readme/parte4.png)
+
+Meu dashboard: A ideia é responder quais são os melhores e piores filmes, então eu dividi em 4 partes, representando 4 variáveis possíveis para se considerar a qualidade de um filme: uma para dados gerais dos filmes, outra para dados sobre premiação de melhor animação do oscar, outra para dados financeiros e uma última para as avaliações, todos sendo filtrados pela produtora, pois tem muitas e vários filmes desconhecidos, assim podemos analisar filmes mais conhecidos.
+
+**Dados gerais**: além dos kpi's com valores gerais dos filmes tem um gráfico mostrando a quantidade de filmes lançados por ano e por produtora e ao lado uma tabela com todos os filmes
+![geral](/desafio/imagens-readme/parte4_geral.PNG)
+
+Também tem filtros para ver os filmes por ano e por produtora.
+<img src="./imagens-readme/parte4_geral-ex.gif" width=500>
+
+<br>
+
+**Dados sobre os vencedores da categoria de melhor animação do Oscar**: mostra o total de filmes e a quantidade de filmes vencedores que cada produtora tem 
+![oscar](/desafio/imagens-readme/parte4_oscar.PNG)
+
+Exemplo com filtros:
+<img src="./imagens-readme/parte4_oscar-ex.gif" width=500>
+
+**Dados financeiros**: mostra os melhores e os piores filmes de acordo com a receita que geraram e de acordo com o lucro
+![financeiro 1](/desafio/imagens-readme/parte4_financeiro.PNG)
+
+Filtros de produtora:
+<img src="./imagens-readme/parte4_financeiro-ex.gif" width=500>
+
+**Dados de avaliações**: mostra os filmes mais bem avaliados e mal avaliados de acordo com o TMDB e o IMDB, além dos dados de popularidade do TMDB
+![avaliacoes](/desafio/imagens-readme/parte4_avaliacoes.PNG)
+![popularidade](/desafio/imagens-readme/parte4_popularidade.png)
+
+Filtros de produtora e número de votos, pois há filmes com ótimas notas mas poucos votos, contra filme com notas razoáveis e muitos votos:
+<img src="./imagens-readme/parte4_avaliacoes-ex.gif" width=500>
