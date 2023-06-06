@@ -209,25 +209,32 @@ Meu dashboard: A ideia é responder quais são os melhores e piores filmes, ent�
 ![geral](/desafio/imagens-readme/parte4_geral.PNG)
 
 Também tem filtros para ver os filmes por ano e por produtora.
-<img src="./imagens-readme/parte4_geral-ex.gif" width=500>
+ 
+<img src="./imagens-readme/parte4_geral-ex.gif" width=900>
 
 <br>
 
 **Dados sobre os vencedores da categoria de melhor animação do Oscar**: mostra o total de filmes e a quantidade de filmes vencedores que cada produtora tem 
+ 
 ![oscar](/desafio/imagens-readme/parte4_oscar.PNG)
 
 Exemplo com filtros:
-<img src="./imagens-readme/parte4_oscar-ex.gif" width=500>
+ 
+<img src="./imagens-readme/parte4_oscar-ex.gif" width=900>
 
 **Dados financeiros**: mostra os melhores e os piores filmes de acordo com a receita que geraram e de acordo com o lucro
 ![financeiro 1](/desafio/imagens-readme/parte4_financeiro.PNG)
 
 Filtros de produtora:
-<img src="./imagens-readme/parte4_financeiro-ex.gif" width=500>
+ 
+<img src="./imagens-readme/parte4_financeiro-ex.gif" width=900>
 
 **Dados de avaliações**: mostra os filmes mais bem avaliados e mal avaliados de acordo com o TMDB e o IMDB, além dos dados de popularidade do TMDB
+ 
 ![avaliacoes](/desafio/imagens-readme/parte4_avaliacoes.PNG)
-![popularidade](/desafio/imagens-readme/parte4_popularidade.png)
+ 
+![popularidade](/desafio/imagens-readme/parte4_popularidade.PNG)
 
 Filtros de produtora e número de votos, pois há filmes com ótimas notas mas poucos votos, contra filme com notas razoáveis e muitos votos:
-<img src="./imagens-readme/parte4_avaliacoes-ex.gif" width=500>
+ 
+<img src="./imagens-readme/parte4_avaliacoes-ex.gif" width=900>
